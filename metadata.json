@@ -1,0 +1,6 @@
+{
+  "name": "Le Rêve",
+  "description": "Luxuriöses Massage- und Wellness-Studio. Ein wahrer Traum für Entspannung und Wohlbefinden.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

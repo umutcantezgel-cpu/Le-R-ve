@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Head Spa &amp; Kopf-Nacken Entspannung - Le Rêve</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#393936",
+                      "on-secondary-fixed-variant": "#574500",
+                      "on-primary-container": "#243e2f",
+                      "tertiary-container": "#a4a29e",
+                      "outline-variant": "#c2c8c1",
+                      "inverse-surface": "#303030",
+                      "on-secondary": "#ffffff",
+                      "surface-container-highest": "#e4e2e2",
+                      "secondary-container": "#fed65b",
+                      "outline": "#727973",
+                      "secondary-fixed": "#ffe088",
+                      "primary-fixed-dim": "#b0ceb8",
+                      "inverse-on-surface": "#f2f0f0",
+                      "tertiary": "#5f5e5b",
+                      "surface-bright": "#fbf9f8",
+                      "primary-fixed": "#cbead4",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6",
+                      "error": "#ba1a1a",
+                      "on-secondary-container": "#745c00",
+                      "surface-container": "#efeded",
+                      "on-surface-variant": "#424843",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed-variant": "#474743",
+                      "primary-container": "#8ca995",
+                      "on-surface": "#1b1c1c",
+                      "surface-variant": "#e4e2e2",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#fbf9f8",
+                      "on-primary": "#ffffff",
+                      "surface-dim": "#dbd9d9",
+                      "on-primary-fixed": "#062013",
+                      "surface-container-high": "#eae8e7",
+                      "secondary-fixed-dim": "#e9c349",
+                      "tertiary-fixed": "#e5e2dd",
+                      "primary": "#496453",
+                      "inverse-primary": "#b0ceb8",
+                      "surface-container-low": "#f5f3f3",
+                      "on-primary-fixed-variant": "#324c3c",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "secondary": "#735c00",
+                      "tertiary-fixed-dim": "#c9c6c2",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed": "#241a00",
+                      "surface-tint": "#496453",
+                      "on-background": "#1b1c1c",
+                      "background": "#fbf9f8"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "container-padding-mobile": "24px",
+                      "container-padding-desktop": "80px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-caps": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        /* Custom Utilities for Glassmorphism & Atmospheric effects */
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .dark .glass-panel {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .ambient-shadow {
+            box-shadow: 0 32px 64px -15px rgba(140, 169, 149, 0.08);
+        }
+        .gold-border-thin {
+            border: 1px solid theme('colors.secondary-fixed-dim');
+            opacity: 0.8;
+        }
+        .sage-tint-overlay {
+            background: linear-gradient(180deg, rgba(140, 169, 149, 0.05) 0%, rgba(251, 249, 248, 0) 100%);
+        }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-secondary/20 shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)]">
+<div class="flex justify-between items-center px-container-padding-mobile md:px-container-padding-desktop py-4 max-w-full mx-auto">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold">
+                Le Rêve
+            </div>
+<nav class="hidden md:flex gap-8 items-center font-headline-md text-headline-md font-medium tracking-tight">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Wellness</a>
+<a class="text-secondary dark:text-secondary-fixed border-b border-secondary pb-1 hover:scale-[1.02] transition-transform duration-300" href="#">Treatments</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Studio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Journal</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Preise</a>
+</nav>
+<button class="hidden md:block bg-primary text-on-primary rounded-lg px-6 py-3 font-body-md text-body-md hover:border-secondary hover:border transition-all cursor-pointer active:scale-95">
+                Termin buchen
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-section-gap relative">
+<!-- Background Ambient Effect -->
+<div class="absolute inset-0 pointer-events-none sage-tint-overlay z-0"></div>
+<!-- Hero Section -->
+<section class="relative px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto z-10 mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="space-y-6">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Tiefenentspannung</span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface">Head Spa &amp; Kopf-Nacken Ritual</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Tauchen Sie ein in eine Welt vollkommener Stille. Unser japanisch inspiriertes Head Spa löst tiefsitzende Verspannungen, revitalisiert die Kopfhaut und bringt den Geist zur Ruhe. Ein Erlebnis von fließendem Wasser, warmen Kompressen und sanfter Berührung.
+                    </p>
+<div class="pt-4 flex items-center gap-4">
+<button class="bg-primary text-on-primary rounded-lg px-8 py-4 font-body-md text-body-md hover:border-secondary hover:border transition-all shadow-md active:scale-95">
+                            Termin anfragen
+                        </button>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">30 Min | 40€</span>
+</div>
+</div>
+<div class="relative h-[500px] w-full rounded-xl overflow-hidden p-2">
+<div class="absolute inset-0 rounded-xl gold-border-thin z-20 pointer-events-none"></div>
+<img alt="Head Spa Setup" class="w-full h-full object-cover rounded-lg hover:scale-[0.98] transition-transform duration-700 ease-in-out" data-alt="A serene, high-end spa setting focused on a head spa treatment. Soft, diffused natural light filters through frosted glass, illuminating sleek wooden combs, a frothy cleansing foam in a ceramic bowl, and warm, steaming towels. The color palette is composed of muted sage greens, warm beiges, and subtle gold accents. The atmosphere is profoundly calm and luxurious, evoking deep relaxation and mindfulness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCso2w7L-TtPhMhVLTzPqKH-1JDJzLnArmkOftYcNJqqhuBtK1Gs_2qUxogg5iKNZu3-6RgQ6h6EfxsCQs6jTxFfwWUE2nce0OVbycV84PzZyOMO8hKVouFzR1AEcH97dKjLAzNKe-_hPh9Ls0XVopiSDBSw5baiZlLnChMP9bgG-ZfZJg4CspNMWBBHSGrBGYkkqGxPmLbg0OI0nwTnbuRIhSLCeu21tVvhqNUh28TByjXGNq2FyQI"/>
+</div>
+</div>
+</section>
+<!-- The Ritual Details (Bento Grid) -->
+<section class="px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Das Ritual</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Jeder Schritt ist darauf ausgelegt, Stress abzubauen und eine tiefe, meditative Entspannung zu fördern.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="glass-panel rounded-xl p-8 border-t border-secondary/30 ambient-shadow flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary mb-6" style="font-variation-settings: 'FILL' 1; font-size: 32px;">water_drop</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Sanfte Reinigung</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Ein luxuriöser Reinigungsschaum befreit sanft von Alltagsstress, begleitet von warmen Wasserflüssen, die beruhigend über die Stirn rinnen.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel rounded-xl p-8 border-t border-secondary/30 ambient-shadow flex flex-col h-full hover:-translate-y-1 transition-transform duration-300 md:col-span-2">
+<div class="flex flex-col md:flex-row gap-6 items-center h-full">
+<div class="flex-1">
+<span class="material-symbols-outlined text-primary mb-6" style="font-variation-settings: 'FILL' 1; font-size: 32px;">spa</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Tiefenmassage</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Spezielle Akupressur-Techniken für Kopf, Nacken und Schultern lösen Blockaden. Warme Kompressen mit ätherischen Ölen vertiefen den Entspannungseffekt.</p>
+</div>
+<div class="flex-1 w-full h-48 md:h-full relative rounded-lg overflow-hidden">
+<img alt="Tiefenmassage" class="w-full h-full object-cover absolute inset-0 rounded-lg hover:scale-[1.05] transition-transform duration-1000" data-alt="Close up of a professional spa therapist gently applying a warm, steaming towel to a client's neck in a softly lit, minimalist room. The lighting is warm and indirect, casting gentle shadows. The mood is tranquil and deeply restorative. The color scheme features soft creams, natural skin tones, and rich sage green." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGzglQiN-zwi6n4cP3myBJ0oMTfl8YMXX7RnnHT-r00URRZ86OXabro2QQ8JhORwHjcL3lgYhhTxVeBu5CIiTE6oNqPkQvChnLAl9URhYDgf1uVwQKH4loQS6aFF-nU64mhyudxuddZ-pfmMBv1F4GjBQADbL8t3aka0JTbnNFc0S9xQ1UaRCjP6cuOvRLVA7YwpKRFSLxNBNH7Lm9wQpDBBMv22ZP-3HFxkjIVW8_ZERPEsMqvGow"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative w-full pt-section-gap pb-12 bg-primary dark:bg-on-primary-fixed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-2 mb-8 md:mb-0">
+<div class="font-headline-md text-headline-md text-on-primary font-bold mb-4">Le Rêve</div>
+<p class="font-body-md text-body-md text-on-primary/80">© 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.</p>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed outline-none rounded" href="#">Impressum</a>
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed outline-none rounded" href="#">Datenschutz</a>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed outline-none rounded" href="#">Kontakt</a>
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed outline-none rounded" href="#">Öffnungszeiten</a>
+</div>
+</div>
+</footer>
+</body></html>

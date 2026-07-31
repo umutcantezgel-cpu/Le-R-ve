@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Le Rêve - Hausbesuche</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#ffe088",
+                      "primary-fixed": "#cbead4",
+                      "on-tertiary-container": "#393936",
+                      "surface-tint": "#496453",
+                      "on-error-container": "#93000a",
+                      "on-surface": "#1b1c1c",
+                      "inverse-primary": "#b0ceb8",
+                      "tertiary-fixed-dim": "#c9c6c2",
+                      "on-tertiary-fixed-variant": "#474743",
+                      "on-secondary-fixed-variant": "#574500",
+                      "on-primary-fixed": "#062013",
+                      "surface-dim": "#dbd9d9",
+                      "outline-variant": "#c2c8c1",
+                      "secondary": "#735c00",
+                      "outline": "#727973",
+                      "primary": "#496453",
+                      "on-secondary-fixed": "#241a00",
+                      "on-secondary": "#ffffff",
+                      "surface": "#fbf9f8",
+                      "secondary-fixed-dim": "#e9c349",
+                      "on-surface-variant": "#424843",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "tertiary-container": "#a4a29e",
+                      "primary-fixed-dim": "#b0ceb8",
+                      "secondary-container": "#fed65b",
+                      "surface-container-low": "#f5f3f3",
+                      "error-container": "#ffdad6",
+                      "surface-container-high": "#eae8e7",
+                      "surface-container": "#efeded",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f2f0f0",
+                      "surface-variant": "#e4e2e2",
+                      "primary-container": "#8ca995",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "on-secondary-container": "#745c00",
+                      "on-background": "#1b1c1c",
+                      "surface-container-highest": "#e4e2e2",
+                      "tertiary-fixed": "#e5e2dd",
+                      "background": "#fbf9f8",
+                      "on-primary-fixed-variant": "#324c3c",
+                      "inverse-surface": "#303030",
+                      "tertiary": "#5f5e5b",
+                      "on-error": "#ffffff",
+                      "surface-bright": "#fbf9f8",
+                      "on-primary-container": "#243e2f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "container-padding-mobile": "24px",
+                      "container-padding-desktop": "80px",
+                      "section-gap": "120px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        
+        .gold-border-top {
+            border-top: 1px solid rgba(115, 92, 0, 0.2);
+        }
+        
+        .ambient-shadow {
+            box-shadow: 0 32px 64px -15px rgba(140, 169, 149, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col pt-[88px]">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-secondary/20 shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)] hidden md:block">
+<div class="flex justify-between items-center px-container-padding-desktop py-4 max-w-full mx-auto">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold cursor-pointer">
+                Le Rêve
+            </div>
+<nav class="flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-headline-md text-headline-md font-medium tracking-tight hover:scale-[1.02] duration-300" href="#">Wellness</a>
+<a class="text-secondary dark:text-secondary-fixed border-b border-secondary pb-1 font-headline-md text-headline-md font-medium tracking-tight hover:scale-[1.02] duration-300" href="#">Treatments</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-headline-md text-headline-md font-medium tracking-tight hover:scale-[1.02] duration-300" href="#">Studio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-headline-md text-headline-md font-medium tracking-tight hover:scale-[1.02] duration-300" href="#">Journal</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-headline-md text-headline-md font-medium tracking-tight hover:scale-[1.02] duration-300" href="#">Preise</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-xl hover:scale-[1.02] transition-transform duration-300 font-headline-md text-headline-md font-medium active:scale-95 border border-transparent hover:border-secondary-fixed-dim">
+                Termin buchen
+            </button>
+</div>
+</header>
+<!-- Mobile Header Fallback -->
+<header class="md:hidden fixed top-0 w-full z-50 glass-panel border-b border-secondary/20 px-container-padding-mobile py-4 flex justify-between items-center">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-secondary italic font-semibold">
+                Le Rêve
+        </div>
+<button class="text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative pt-16 md:pt-24 pb-section-gap px-container-padding-mobile md:px-container-padding-desktop flex flex-col md:flex-row items-center gap-12 max-w-[1440px] mx-auto">
+<div class="w-full md:w-1/2 flex flex-col gap-6 z-10 text-center md:text-left">
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Le Rêve bei Ihnen</p>
+<h1 class="font-headline-xl text-headline-xl text-primary leading-tight">Ihre persönliche Wohlfühloase,<br/>direkt zu Hause.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto md:mx-0">
+                    Genießen Sie exklusive Wellness-Behandlungen in der vertrauten und ruhigen Umgebung Ihres eigenen Zuhauses. Wir bringen die entspannende Atmosphäre und professionelle Expertise von Le Rêve direkt zu Ihnen – für höchste Privatsphäre und maximalen Komfort, besonders während der Schwangerschaft.
+                </p>
+<div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl hover:scale-[1.02] transition-all duration-300 font-medium border border-transparent hover:border-secondary-fixed-dim">
+                        Hausbesuch anfragen
+                    </button>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative">
+<!-- Gold Frame Signature Component -->
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-xl transform translate-x-4 translate-y-4 -z-10"></div>
+<div class="relative rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-[500px] object-cover rounded-xl" data-alt="A professional female massage therapist in elegant sage green uniform setting up a massage table in a bright, modern, minimalist living room with large windows. The lighting is soft, natural, and serene. High-end, luxury wellness aesthetic with a sense of calm and preparation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOShxCsIg7d1uovjdnu7O3_atCR_rivGWi_wjujw8I37hRe2K0nslaydg6vjwWuIZvKIJHI24dslW2IRDCQQql_E6zApv3y1WMyWc-RR3AXY0D7fPSJKcES--aWt7l8uC0ZmEkxey9yfsDErjTPMuadaBGNq9XTeKIliYhndRrV_GfLJfJYupLqxFvWBXaqIOztdLU1VVYFucJQzwQWq-XufFPPrksCqxbJCldYiqIoKpnI66szpTm"/>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-section-gap px-container-padding-mobile md:px-container-padding-desktop bg-surface-container-low">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Der Ablauf eines Hausbesuchs</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Wir kümmern uns um alles, damit Sie sich voll und ganz auf Ihre Entspannung konzentrieren können.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
+<!-- Step 1 -->
+<div class="glass-panel p-8 rounded-xl gold-border-top ambient-shadow flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">event_available</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">1. Terminvereinbarung</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Sie fragen Ihren Wunschtermin bequem online an. Wir bestätigen die Details und besprechen vorab Ihre individuellen Bedürfnisse.</p>
+</div>
+<!-- Step 2 -->
+<div class="glass-panel p-8 rounded-xl gold-border-top ambient-shadow flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">local_shipping</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">2. Ankunft &amp; Aufbau</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ihre Therapeutin bringt alles mit: eine komfortable Liege, hochwertige Öle, weiche Handtücher und entspannende Musik.</p>
+</div>
+<!-- Step 3 -->
+<div class="glass-panel p-8 rounded-xl gold-border-top ambient-shadow flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">spa</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">3. Entspannung Pur</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Genießen Sie Ihre maßgeschneiderte Behandlung. Im Anschluss bauen wir unauffällig wieder ab, während Sie nachruhen können.</p>
+</div>
+</div>
+</section>
+<!-- Conditions & Info Section -->
+<section class="py-section-gap px-container-padding-mobile md:px-container-padding-desktop max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover rounded-xl aspect-[4/5]" data-alt="A close up of high quality massage oils, neatly rolled soft white towels, and a small potted plant arranged elegantly on a wooden tray on a light colored bed. Soft, airy, light-mode aesthetic reflecting a premium mobile spa service in a home environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcDR5B3_CgPsl79NjHdfcvvnHOfbqZWNZibUe-uOSEsgXtotgkpDKN54l-zJVhI_mQwnm4fqB1EcCkPpJZ6Ld-S9peCEyik9erorX73d4kAgJ8T1VFR3qT7u5AZ93VQOkyQhVwXa6MEXbjb9VW-NgE1hwX-gDA1AEWeTHWe7kS_GOyDYLwfVXaHZBv92mHwpT_Z17Vo-RnL7GxPIrTJXvMaXVKKdGuoULLpB_fD-kOsXwnOWuVg6GF"/>
+</div>
+<div class="order-1 lg:order-2 flex flex-col gap-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Konditionen &amp; Hinweise</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Um Ihnen das beste Erlebnis zu bieten, bitten wir um Beachtung einiger weniger Details für unsere Hausbesuche.</p>
+</div>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<h4 class="font-headline-md text-[18px] text-primary mb-1">Anfahrtsbereich</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Wir bieten Hausbesuche im Stadtgebiet sowie im Umkreis von bis zu 20 km an. Weitere Distanzen auf Anfrage.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<h4 class="font-headline-md text-[18px] text-primary mb-1">Platzbedarf</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Für den Aufbau der mobilen Massageliege benötigen wir eine freie Fläche von ca. 2,5 x 1,5 Metern in einem ruhigen Raum.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<h4 class="font-headline-md text-[18px] text-primary mb-1">Anfahrtskosten</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Die Anfahrtspauschale richtet sich nach der Entfernung und wird bei der Buchung transparent kommuniziert.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<div>
+<h4 class="font-headline-md text-[18px] text-primary mb-1">Ausstattung</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Sie müssen nichts vorbereiten. Liege, Laken, Öle und eine Musikanlage werden von uns gestellt.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative w-full pt-section-gap pb-12 bg-primary dark:bg-on-primary-fixed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-desktop max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-on-primary font-bold">Le Rêve</div>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap justify-end gap-6 md:gap-8 items-center">
+<a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Impressum</a>
+<a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Datenschutz</a>
+<a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Kontakt</a>
+<a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Öffnungszeiten</a>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-on-primary/20 text-center">
+<p class="font-body-md text-body-md text-on-primary/80">© 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.</p>
+</div>
+</div>
+</footer>
+</body></html>

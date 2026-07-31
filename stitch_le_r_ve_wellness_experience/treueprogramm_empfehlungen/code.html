@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Treueprogramm | Le Rêve</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:wght@400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffe088",
+                        "primary-fixed": "#cbead4",
+                        "on-tertiary-container": "#393936",
+                        "surface-tint": "#496453",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1b1c1c",
+                        "inverse-primary": "#b0ceb8",
+                        "tertiary-fixed-dim": "#c9c6c2",
+                        "on-tertiary-fixed-variant": "#474743",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-primary-fixed": "#062013",
+                        "surface-dim": "#dbd9d9",
+                        "outline-variant": "#c2c8c1",
+                        "secondary": "#735c00",
+                        "outline": "#727973",
+                        "primary": "#496453",
+                        "on-secondary-fixed": "#241a00",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fbf9f8",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-surface-variant": "#424843",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#a4a29e",
+                        "primary-fixed-dim": "#b0ceb8",
+                        "secondary-container": "#fed65b",
+                        "surface-container-low": "#f5f3f3",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#eae8e7",
+                        "surface-container": "#efeded",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-variant": "#e4e2e2",
+                        "primary-container": "#8ca995",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "on-secondary-container": "#745c00",
+                        "on-background": "#1b1c1c",
+                        "surface-container-highest": "#e4e2e2",
+                        "tertiary-fixed": "#e5e2dd",
+                        "background": "#fbf9f8",
+                        "on-primary-fixed-variant": "#324c3c",
+                        "inverse-surface": "#303030",
+                        "tertiary": "#5f5e5b",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fbf9f8",
+                        "on-primary-container": "#243e2f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-padding-mobile": "24px",
+                        "container-padding-desktop": "80px",
+                        "section-gap": "120px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-top: 1px solid rgba(115, 92, 0, 0.3); /* Subtle Gold */
+            box-shadow: 0 32px 64px -15px rgba(140, 169, 149, 0.08);
+        }
+        .stamp-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(73, 100, 83, 0.2);
+            transition: all 0.3s ease;
+        }
+        .stamp-circle.filled {
+            background-color: #8ca995; /* primary-container */
+            color: white;
+            border: none;
+        }
+        .stamp-circle.special {
+            background: linear-gradient(135deg, #8ca995 0%, #fed65b 100%);
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-white/60 dark:bg-black/60 backdrop-blur-xl font-headline-md text-headline-md font-medium tracking-tight fixed top-0 w-full z-50 border-b border-secondary/20 backdrop-blur-md shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)]">
+<div class="flex justify-between items-center px-container-padding-desktop py-4 max-w-full mx-auto">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold">Le Rêve</div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] transition-transform duration-300 cursor-pointer active:scale-95 transition-all" href="#">Wellness</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] transition-transform duration-300 cursor-pointer active:scale-95 transition-all" href="#">Treatments</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] transition-transform duration-300 cursor-pointer active:scale-95 transition-all" href="#">Studio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] transition-transform duration-300 cursor-pointer active:scale-95 transition-all" href="#">Journal</a>
+<a class="text-secondary dark:text-secondary-fixed border-b border-secondary pb-1 hover:scale-[1.02] transition-transform duration-300 cursor-pointer active:scale-95 transition-all" href="#">Preise</a>
+</nav>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-3 rounded-lg font-body-md hover:border-secondary hover:border border border-transparent transition-all">Termin buchen</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-32 pb-section-gap px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="text-center mb-24 max-w-3xl mx-auto">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6">Unser Treueprogramm</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Ihre Treue ist uns wertvoll. Genießen Sie als fester Bestandteil der Le Rêve Familie exklusive Vorteile. Entspannen Sie öfter, teilen Sie die Ruhe und lassen Sie sich von uns belohnen.
+            </p>
+</section>
+<!-- 10-er Karte Bento -->
+<section class="mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center px-4 py-2 rounded-full bg-primary-container/20 text-primary font-label-caps uppercase tracking-wider text-xs">
+<span class="material-symbols-outlined text-[16px] mr-2" data-icon="stars" style="font-variation-settings: 'FILL' 1;">stars</span>
+                        Die 10-er Karte
+                    </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Jede 10. Massage zum halben Preis.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Für unsere Stammgäste, die regelmäßige Entspannung in ihren Alltag integrieren. Bei Ihrem 10. Besuch in unserem Studio schenken wir Ihnen 50% Rabatt auf eine Behandlung Ihrer Wahl.
+                    </p>
+<ul class="space-y-4 pt-4">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-3 mt-1">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Gültig für alle regulären Massagen und Gesichtsbehandlungen.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-3 mt-1">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Ihre digitale Stempelkarte wird automatisch in Ihrem Profil geführt.</span>
+</li>
+</ul>
+</div>
+<div class="lg:col-span-7">
+<div class="glass-card p-8 rounded-xl relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 -mt-16 -mr-16 w-64 h-64 bg-primary-fixed opacity-30 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-primary mb-8 text-center">Ihre Wohlfühl-Reise</h3>
+<div class="grid grid-cols-5 gap-y-8 gap-x-4">
+<!-- Stamps 1-5 -->
+<div class="flex flex-col items-center">
+<div class="stamp-circle filled shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="stamp-circle filled shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="stamp-circle filled shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="stamp-circle bg-surface-container-high text-outline">
+<span class="font-body-md font-semibold">4</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="stamp-circle bg-surface-container-high text-outline">
+<span class="font-body-md font-semibold">5</span>
+</div>
+</div>
+<!-- Stamps 6-10 -->
+<div class="flex flex-col items-center">
+<div class="stamp-circle bg-surface-container-high text-outline">
+<span class="font-body-md font-semibold">6</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="stamp-circle bg-surface-container-high text-outline">
+<span class="font-body-md font-semibold">7</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="stamp-circle bg-surface-container-high text-outline">
+<span class="font-body-md font-semibold">8</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="stamp-circle bg-surface-container-high text-outline">
+<span class="font-body-md font-semibold">9</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="stamp-circle special shadow-md relative">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">card_giftcard</span>
+<div class="absolute -bottom-6 text-xs font-label-caps text-secondary font-bold whitespace-nowrap">-50%</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<p class="font-body-md text-on-surface-variant italic mb-4">Noch 7 Behandlungen bis zu Ihrem Geschenk.</p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-body-md hover:border-secondary hover:border border border-transparent transition-all w-full md:w-auto shadow-sm hover:shadow-md">Nächsten Termin buchen</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Freunde werben -->
+<section>
+<div class="glass-card rounded-xl p-8 md:p-12 border border-secondary/10 relative overflow-hidden">
+<!-- Background image for texture -->
+<div class="absolute inset-0 z-0 opacity-10 mix-blend-multiply" data-alt="A soft, abstract, blurred image of sage green eucalyptus leaves scattered on a white marble surface, bathed in warm, gentle sunlight. The aesthetic is high-end spa, clean, serene, minimal, and organic. Light mode, bright, airy." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC7-ZK5uC-Y2JcJsnUexCAON5dW3oRMYnYGaNm6gg_wFvNgF6kMjmravGCJ5MszLEVdLPtEKmGoTkri-YBg-a_KZue8HPDoGXBrO68M9-Q76odDI4orc3ocwiKMyaywxR6JWMRUx0hCLlUMFFW1nwETxBvU-JqKwBgkfThwMVdP7gZ97ff0ZwXOCBXfNvRXhJhTgRNEJx3lrGi5Z2bpSzDrk6bhy2uz2KhKr9BGIzLCtASOduIn65yN')"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Freunde werben, gemeinsam entspannen.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                            Gutes teilt man gerne. Wenn Sie Le Rêve einer Freundin empfehlen, erhalten Sie beide ein kleines Dankeschön von uns für Ihre nächste Auszeit.
+                        </p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="bg-secondary-container text-on-secondary-container w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4 shrink-0 shadow-sm">1</div>
+<div>
+<h4 class="font-body-md font-bold text-on-surface mb-1">Empfehlen</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Senden Sie Ihren persönlichen Einladungslink an Ihre Liebsten.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-secondary-container text-on-secondary-container w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4 shrink-0 shadow-sm">2</div>
+<div>
+<h4 class="font-body-md font-bold text-on-surface mb-1">Ihre Freundin genießt</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Sie erhält 10€ Rabatt auf ihre erste Massage bei uns.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-secondary-container text-on-secondary-container w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4 shrink-0 shadow-sm">3</div>
+<div>
+<h4 class="font-body-md font-bold text-on-surface mb-1">Sie werden belohnt</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Sobald Ihre Freundin ihren Termin wahrgenommen hat, schreiben wir Ihnen 10€ für Ihren nächsten Besuch gut.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface rounded-xl p-8 shadow-sm border border-outline-variant/30 flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="volunteer_activism" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Ihr persönlicher Link</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-6">Teilen Sie diesen Link per WhatsApp oder Email.</p>
+<div class="w-full bg-surface-container-high rounded-lg p-3 flex items-center justify-between border-b border-primary focus-within:border-b-2 transition-all">
+<span class="font-body-md text-on-surface text-sm truncate mr-2 select-all">lereve.de/invite/anna-m</span>
+<button class="text-primary hover:text-secondary transition-colors" title="Kopieren">
+<span class="material-symbols-outlined text-xl" data-icon="content_copy">content_copy</span>
+</button>
+</div>
+<button class="mt-6 border border-secondary text-secondary px-6 py-2 rounded-lg font-body-md hover:bg-secondary-fixed/50 transition-colors w-full">
+                            Jetzt per E-Mail teilen
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-on-primary-fixed text-on-primary dark:text-primary-fixed font-body-md text-body-md text-on-primary/80 relative w-full pt-section-gap pb-12 flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-desktop max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-4 mb-8">
+<span class="font-headline-md text-headline-md text-on-primary font-bold">Le Rêve</span>
+</div>
+<nav class="col-span-1 md:col-span-2 flex flex-col md:flex-row gap-4 md:gap-8">
+<a class="text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Impressum</a>
+<a class="text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Datenschutz</a>
+<a class="text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Kontakt</a>
+<a class="text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Öffnungszeiten</a>
+</nav>
+<div class="col-span-1 md:col-span-2 text-left md:text-right mt-8 md:mt-0 text-sm opacity-80">
+                © 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.
+            </div>
+</div>
+</footer>
+</body></html>

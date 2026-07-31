@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Le Rêve - Aroma-Therapie Massage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#393936",
+                      "on-secondary-fixed-variant": "#574500",
+                      "on-primary-container": "#243e2f",
+                      "tertiary-container": "#a4a29e",
+                      "outline-variant": "#c2c8c1",
+                      "inverse-surface": "#303030",
+                      "on-secondary": "#ffffff",
+                      "surface-container-highest": "#e4e2e2",
+                      "secondary-container": "#fed65b",
+                      "outline": "#727973",
+                      "secondary-fixed": "#ffe088",
+                      "primary-fixed-dim": "#b0ceb8",
+                      "inverse-on-surface": "#f2f0f0",
+                      "tertiary": "#5f5e5b",
+                      "surface-bright": "#fbf9f8",
+                      "primary-fixed": "#cbead4",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6",
+                      "error": "#ba1a1a",
+                      "on-secondary-container": "#745c00",
+                      "surface-container": "#efeded",
+                      "on-surface-variant": "#424843",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed-variant": "#474743",
+                      "primary-container": "#8ca995",
+                      "on-surface": "#1b1c1c",
+                      "surface-variant": "#e4e2e2",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#fbf9f8",
+                      "on-primary": "#ffffff",
+                      "surface-dim": "#dbd9d9",
+                      "on-primary-fixed": "#062013",
+                      "surface-container-high": "#eae8e7",
+                      "secondary-fixed-dim": "#e9c349",
+                      "tertiary-fixed": "#e5e2dd",
+                      "primary": "#496453",
+                      "inverse-primary": "#b0ceb8",
+                      "surface-container-low": "#f5f3f3",
+                      "on-primary-fixed-variant": "#324c3c",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "secondary": "#735c00",
+                      "tertiary-fixed-dim": "#c9c6c2",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed": "#241a00",
+                      "surface-tint": "#496453",
+                      "on-background": "#1b1c1c",
+                      "background": "#fbf9f8"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "container-padding-mobile": "24px",
+                      "container-padding-desktop": "80px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-caps": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            scroll-behavior: smooth;
+        }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .ambient-shadow {
+            box-shadow: 0 32px 64px -15px rgba(140, 169, 149, 0.08);
+        }
+        
+        .gold-border {
+            border: 1px solid theme('colors.secondary-fixed-dim');
+        }
+        
+        .gold-inset {
+            box-shadow: inset 0 0 0 8px rgba(233, 195, 73, 0.3); /* secondary-fixed-dim approx */
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="hidden md:flex flex-col bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-secondary/20 backdrop-blur-md shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)] fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-container-padding-desktop py-4 max-w-full mx-auto w-full">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold">Le Rêve</div>
+<ul class="flex gap-8 font-headline-md text-headline-md font-medium tracking-tight">
+<li class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer hover:scale-[1.02] transition-transform duration-300">Wellness</li>
+<li class="text-secondary dark:text-secondary-fixed border-b border-secondary pb-1 cursor-pointer hover:scale-[1.02] transition-transform duration-300">Treatments</li>
+<li class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer hover:scale-[1.02] transition-transform duration-300">Studio</li>
+<li class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer hover:scale-[1.02] transition-transform duration-300">Journal</li>
+<li class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer hover:scale-[1.02] transition-transform duration-300">Preise</li>
+</ul>
+<button class="bg-primary text-on-primary font-body-md text-body-md px-6 py-3 rounded-lg hover:border hover:border-secondary-fixed-dim hover:scale-[1.02] transition-all duration-300 active:scale-95">Termin buchen</button>
+</div>
+</nav>
+<!-- Mobile Nav Spacer -->
+<div class="h-24 md:h-32"></div>
+<main>
+<!-- Hero Section -->
+<section class="px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto py-12 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 flex flex-col gap-6 z-10">
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest">Die Essenz der Natur</span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface">Aroma-Therapie <br/><span class="italic text-primary">Massage</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md leading-relaxed">
+                    Tauchen Sie ein in eine Welt tiefster Entspannung. Durch die gezielte Anwendung naturreiner ätherischer Öle harmonisieren wir Körper, Geist und Seele. Ein Erlebnis für die Sinne, das emotionale Balance schenkt und Ihre innere Ruhe wiederherstellt.
+                </p>
+<div class="pt-4 flex gap-4">
+<button class="bg-primary text-on-primary font-body-md text-body-md px-8 py-4 rounded-lg hover:border hover:border-secondary-fixed-dim hover:-translate-y-1 transition-all duration-300 shadow-md">Jetzt Buchen</button>
+<button class="border border-secondary-fixed-dim text-secondary-fixed-variant font-headline-md text-headline-md px-8 py-3 rounded-lg hover:bg-surface-container-lowest transition-colors duration-300">Details</button>
+</div>
+</div>
+<div class="md:col-span-7 relative mt-12 md:mt-0">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden gold-inset">
+<img class="w-full h-full object-cover rounded-xl transition-transform duration-700 hover:scale-[1.02]" data-alt="A macro shot of essential oil drops falling into a beautifully textured ceramic bowl surrounded by fresh herbs like lavender and rosemary. The setting is a bright, airy luxury spa with soft natural sunlight filtering through sheer curtains. The aesthetic is extremely clean, minimalist, and deeply calming, featuring soft sage greens, warm creams, and delicate gold accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCefnbAWXF_5mKkaU9UQZGw7Kz_DLKVqtoo0B5HuDav1gJP_fikkgKeFKqqVTnhWUpsFLGvtiIw1YIlyO__hOoNs2AcWkG9sBKygA3RCteOkUh93BJEEi_4HrhfeVuvx-bO6jYSFxCtlCVWoi1FAKl1gdlq5BMRMGR8O4RXNDjVCT1zY_vMzno4RrBrpAm0E6abRB9ZY1E6vRpBKuGdVLOgv6ugUTRRvMo1FhEnQDY9dLoDkmKaIBsY"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent pointer-events-none rounded-xl"></div>
+</div>
+<!-- Floating Glass Card -->
+<div class="absolute -bottom-12 -left-8 md:-left-16 w-64 glass-panel rounded-xl p-6 gold-border ambient-shadow hidden md:block">
+<div class="flex items-center gap-4 mb-3">
+<span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">spa</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Pures Öl</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Ausschließlich 100% naturreine Extrakte in therapeutischer Qualität.</p>
+</div>
+</div>
+</section>
+<!-- The Scents (Bento Grid) -->
+<section class="bg-surface-container-low py-section-gap px-container-padding-mobile md:px-container-padding-desktop">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Die Komposition der Düfte</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Wir wählen intuitiv und gemeinsam mit Ihnen die perfekte Symphonie aus ätherischen Ölen, um Ihre aktuellen Bedürfnisse sanft zu unterstützen.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+<!-- Card 1: Lavender (Spans 2 cols on desktop) -->
+<div class="md:col-span-2 glass-panel rounded-xl gold-border overflow-hidden relative group cursor-pointer ambient-shadow flex flex-col justify-end p-8">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03] opacity-60 z-0" data-alt="Close up photography of fresh blooming lavender sprigs resting on soft, flowing natural linen. The lighting is ethereal and morning-fresh, casting very soft, diffused shadows. The color palette focuses on serene pastel purples, warm creamy whites, and muted sage greens. High-end editorial wellness photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYAJAvXp3E9fqJUu0t82dYVBSf-aBq8Eb7t2X-EQedbLCn9Yoz7uLojLHo7ALg8OErkWY4tiGrXSjj5JIs7Ly0tayfn5Oibh7X511SoDQXeWONiZ7Cz4K62tDjVHxZ9ZcLv4CD6BtOvemI_uoYCP_bFuNJbwCriL1xWPA-YdaWf76HnWARX7gbqMTo8O4zhVNKGCn1dGrtpQd9PHVIfz2uwSgip2i2ps9Bx00NNeBBpwPeHovLxaEi"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10"></div>
+<div class="relative z-20">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-2">Lavendel &amp; Kamille</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Die Essenz der tiefen Beruhigung. Löst Stress, fördert einen erholsamen Schlaf und hüllt den Geist in eine weiche, tröstende Umarmung.</p>
+</div>
+</div>
+<!-- Card 2: Citrus -->
+<div class="glass-panel rounded-xl gold-border overflow-hidden relative group cursor-pointer ambient-shadow flex flex-col justify-end p-8">
+<div class="absolute inset-0 bg-secondary/5 z-0"></div>
+<div class="relative z-20 flex flex-col items-center text-center h-full justify-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" style="font-variation-settings: 'FILL' 0;">local_florist</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Bergamotte &amp; Neroli</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Stimmungsaufhellend und ausgleichend. Ein Hauch von floraler Frische für emotionale Klarheit.</p>
+</div>
+</div>
+<!-- Card 3: Wood -->
+<div class="glass-panel rounded-xl border border-primary/20 overflow-hidden relative group cursor-pointer ambient-shadow p-8 flex flex-col">
+<span class="material-symbols-outlined text-primary mb-auto" style="font-variation-settings: 'FILL' 0;">forest</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Zeder &amp; Sandelholz</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Erdend und stabilisierend. Spendet Kraft und vermittelt ein Gefühl von tiefem Schutz und Geborgenheit.</p>
+</div>
+</div>
+<!-- Card 4: Eucalyptus (Spans 2 cols on desktop) -->
+<div class="md:col-span-2 glass-panel rounded-xl overflow-hidden relative group cursor-pointer ambient-shadow">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03] opacity-40 z-0" data-alt="A minimalist, modern ceramic essential oil diffuser emitting a gentle plume of mist. Next to it, crisp green eucalyptus leaves and a smooth river stone. The background is a soft, textured plaster wall in an off-white cream color. Soft, calming studio lighting emphasizing texture and tranquility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsIZLb_687gzEfZSIddvoT-_4HTkFDiG6wR23TRH9MQn7KgNFmx7w7xcqRC7lUmNB_-bNBT_XWy8rzvY6-SrsKTth_T-29BPzZ0zrIj-UvM5fUv5YHxFNAaJPogWxa664aXoQ26m81KeQBS52uACPSyemcHDFkZEWdoXCNckTRAF2y16ZMVYdNPXkzYLGLh7U0fjbCKAJ9ZDciIdhqeJ4X5Cz3rTjPQ4DyCysatj7iWNbsHsKpk3yB"/>
+<div class="absolute inset-0 bg-primary/10 z-10 backdrop-blur-[2px]"></div>
+<div class="relative z-20 p-8 h-full flex flex-col justify-center">
+<div class="max-w-md">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-3">Eukalyptus &amp; Minze</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Befreiend und klärend. Öffnet die Atemwege, erfrischt den Geist und schenkt neue, reine Lebensenergie.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-section-gap px-container-padding-mobile md:px-container-padding-desktop relative overflow-hidden">
+<!-- Decorative blur blob -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-fixed-dim/30 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest block mb-4">Investition in sich selbst</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Preise &amp; Zeiten</h2>
+</div>
+<div class="flex flex-col gap-6">
+<!-- Price Option 1 -->
+<div class="glass-panel p-8 rounded-xl border-t border-secondary-fixed-dim ambient-shadow flex flex-col md:flex-row justify-between items-center group hover:-translate-y-1 transition-transform duration-300">
+<div class="text-center md:text-left mb-4 md:mb-0">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-1">Die kleine Auszeit</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center justify-center md:justify-start gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">schedule</span>
+                                60 Minuten
+                            </p>
+</div>
+<div class="flex flex-col items-center md:items-end">
+<span class="font-headline-xl text-headline-xl text-primary mb-2">65€</span>
+<button class="text-secondary-fixed-variant font-body-md text-body-md hover:underline decoration-secondary-fixed-dim underline-offset-4">Termin anfragen</button>
+</div>
+</div>
+<!-- Price Option 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-secondary-fixed-dim shadow-[0_20px_40px_-10px_rgba(233,195,73,0.15)] flex flex-col md:flex-row justify-between items-center group relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary-fixed-dim text-on-secondary-fixed-variant font-label-caps text-label-caps px-4 py-1 rounded-bl-lg">Beliebt</div>
+<div class="text-center md:text-left mb-4 md:mb-0 z-10">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-1">Tiefe Balance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center justify-center md:justify-start gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">schedule</span>
+                                90 Minuten
+                            </p>
+</div>
+<div class="flex flex-col items-center md:items-end z-10">
+<span class="font-headline-xl text-headline-xl text-primary mb-2">90€</span>
+<button class="bg-primary text-on-primary font-body-md text-body-md px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">Jetzt Buchen</button>
+</div>
+</div>
+<!-- Price Option 3 -->
+<div class="glass-panel p-8 rounded-xl border-t border-secondary-fixed-dim ambient-shadow flex flex-col md:flex-row justify-between items-center group hover:-translate-y-1 transition-transform duration-300">
+<div class="text-center md:text-left mb-4 md:mb-0">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-1">Das vollkommene Ritual</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center justify-center md:justify-start gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">schedule</span>
+                                120 Minuten
+                            </p>
+</div>
+<div class="flex flex-col items-center md:items-end">
+<span class="font-headline-xl text-headline-xl text-primary mb-2">115€</span>
+<button class="text-secondary-fixed-variant font-body-md text-body-md hover:underline decoration-secondary-fixed-dim underline-offset-4">Termin anfragen</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-on-primary-fixed relative w-full pt-section-gap pb-12 flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-desktop max-w-7xl mx-auto">
+<div class="md:col-span-1 mb-8 md:mb-0">
+<span class="font-headline-md text-headline-md text-on-primary font-bold block mb-4 italic">Le Rêve</span>
+<p class="font-body-md text-body-md text-on-primary/80">Ein Wahrer Traum. Ein Rückzugsort für innere Balance und vollkommene Entspannung.</p>
+</div>
+<div class="md:col-span-2 flex flex-col md:flex-row justify-around gap-8 md:gap-0">
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors focus:ring-2 focus:ring-secondary-fixed hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Impressum</a></li>
+<li><a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors focus:ring-2 focus:ring-secondary-fixed hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Datenschutz</a></li>
+</ul>
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors focus:ring-2 focus:ring-secondary-fixed hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Kontakt</a></li>
+<li><a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors focus:ring-2 focus:ring-secondary-fixed hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Öffnungszeiten</a></li>
+</ul>
+</div>
+</div>
+<div class="px-container-padding-desktop max-w-7xl mx-auto mt-16 pt-8 border-t border-on-primary/20 text-center">
+<p class="font-body-md text-body-md text-on-primary/60 text-sm">© 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.</p>
+</div>
+</footer>
+</body></html>

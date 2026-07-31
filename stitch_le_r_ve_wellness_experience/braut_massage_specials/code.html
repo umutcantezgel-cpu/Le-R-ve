@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Le Rêve - Braut-Massage &amp; Specials</title>
+<!-- Tailwind Setup -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config injected from design system -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#ffe088",
+                      "primary-fixed": "#cbead4",
+                      "on-tertiary-container": "#393936",
+                      "surface-tint": "#496453",
+                      "on-error-container": "#93000a",
+                      "on-surface": "#1b1c1c",
+                      "inverse-primary": "#b0ceb8",
+                      "tertiary-fixed-dim": "#c9c6c2",
+                      "on-tertiary-fixed-variant": "#474743",
+                      "on-secondary-fixed-variant": "#574500",
+                      "on-primary-fixed": "#062013",
+                      "surface-dim": "#dbd9d9",
+                      "outline-variant": "#c2c8c1",
+                      "secondary": "#735c00",
+                      "outline": "#727973",
+                      "primary": "#496453",
+                      "on-secondary-fixed": "#241a00",
+                      "on-secondary": "#ffffff",
+                      "surface": "#fbf9f8",
+                      "secondary-fixed-dim": "#e9c349",
+                      "on-surface-variant": "#424843",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "tertiary-container": "#a4a29e",
+                      "primary-fixed-dim": "#b0ceb8",
+                      "secondary-container": "#fed65b",
+                      "surface-container-low": "#f5f3f3",
+                      "error-container": "#ffdad6",
+                      "surface-container-high": "#eae8e7",
+                      "surface-container": "#efeded",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f2f0f0",
+                      "surface-variant": "#e4e2e2",
+                      "primary-container": "#8ca995",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "on-secondary-container": "#745c00",
+                      "on-background": "#1b1c1c",
+                      "surface-container-highest": "#e4e2e2",
+                      "tertiary-fixed": "#e5e2dd",
+                      "background": "#fbf9f8",
+                      "on-primary-fixed-variant": "#324c3c",
+                      "inverse-surface": "#303030",
+                      "tertiary": "#5f5e5b",
+                      "on-error": "#ffffff",
+                      "surface-bright": "#fbf9f8",
+                      "on-primary-container": "#243e2f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "container-padding-mobile": "24px",
+                      "container-padding-desktop": "80px",
+                      "section-gap": "120px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .gold-border {
+            border: 1px solid theme('colors.secondary-fixed');
+        }
+
+        .gold-border-inset {
+            box-shadow: inset 0 0 0 8px theme('colors.secondary-fixed');
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            border-top: 1px solid theme('colors.secondary-fixed');
+            box-shadow: 0 32px 64px -15px rgba(140, 169, 149, 0.08);
+        }
+
+        /* Ambient subtle gradient background */
+        .ambient-bg {
+            background: radial-gradient(circle at 100% 0%, rgba(203, 234, 212, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 0% 100%, rgba(255, 224, 136, 0.2) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="ambient-bg flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-secondary/20 shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)]">
+<div class="flex justify-between items-center px-container-padding-mobile md:px-container-padding-desktop py-4 max-w-full mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-lg text-headline-lg md:font-headline-lg md:text-headline-lg text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold hover:scale-[1.02] transition-transform duration-300" href="#">
+                Le Rêve
+            </a>
+<!-- Navigation Links (Hidden on Mobile) -->
+<nav class="hidden md:flex gap-8 items-center font-headline-md text-headline-md font-medium tracking-tight">
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Wellness</a>
+<a class="text-secondary dark:text-secondary-fixed border-b border-secondary pb-1" href="#">Treatments</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Studio</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Journal</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Preise</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<button class="hidden md:block bg-primary text-on-primary font-body-md text-body-md px-6 py-2 rounded-lg hover:border-secondary-fixed hover:border cursor-pointer active:scale-95 transition-all">
+                    Termin buchen
+                </button>
+<!-- Mobile Menu Icon (Placeholder for interaction) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-section-gap px-container-padding-mobile md:px-container-padding-desktop">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1 text-center md:text-left space-y-6 pr-0 md:pr-12">
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest block">Exklusiv für Ihren großen Tag</span>
+<h1 class="font-headline-xl text-headline-xl text-primary md:font-headline-xl md:text-headline-xl">Braut-Massage &amp; Specials</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Bereiten Sie sich auf den wichtigsten Tag Ihres Lebens vor. Eine Sinfonie aus Entspannung, Pflege und strahlender Schönheit, kreiert für die moderne Braut. Lassen Sie den Stress der Vorbereitungen hinter sich und tauchen Sie ein in eine Oase der Ruhe.
+                    </p>
+<div class="pt-4">
+<button class="bg-primary text-on-primary font-body-md text-body-md px-8 py-3 rounded-lg hover:border-secondary-fixed hover:border transition-all duration-300">
+                            Beratung anfragen
+                        </button>
+</div>
+</div>
+<div class="order-1 md:order-2 relative aspect-[4/5] rounded-xl overflow-hidden gold-border-inset">
+<img class="object-cover w-full h-full transform hover:scale-[0.98] transition-transform duration-700 ease-out" data-alt="A luxurious, high-end spa setting bathed in soft, warm morning light filtering through sheer curtains. A beautiful, serene woman with soft, glowing skin is receiving a gentle shoulder massage. The atmosphere is romantic, elegant, and calming, with subtle gold accents and lush green sage elements in the background, embodying a Sanctuary of Serenity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALnB-XYwNVpDhRhEXFPiomrFue9hlm839DkLnj0YL1A07ngtOpcAAIhCSUDfLEW8PECxWmN0YzvdJHSFAzZPsD8hDtFJyD7TavCTkROudrpSNH01DBzelBeeNGyElKE8YjkMuxDXl35fpkATkVk0P_aEmvWyW3Lea02c9mfyvyUoi5mIIVOiW9eAFDkySov7kFvuAtUDUbgng_luIN8b6iO1bVRg2w9isnytk81GtUteYYO2qEwO8t"/>
+</div>
+</div>
+</section>
+<!-- Signature Treatment Card -->
+<section class="max-w-5xl mx-auto mb-section-gap relative">
+<div class="glass-card rounded-2xl p-8 md:p-12 relative overflow-hidden">
+<!-- Decorative Blur -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-8 space-y-4">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Die Signature Braut-Massage</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Ein 90-minütiges Ritual, das tiefgehende Entspannung mit luxuriöser Hautpflege verbindet. Warme, duftende Öle, sanfte Streichungen und gezielte Lösung von Verspannungen im Nacken- und Schulterbereich sorgen dafür, dass Sie an Ihrem Hochzeitstag von innen heraus strahlen.
+                        </p>
+<div class="flex items-center gap-2 pt-2">
+<span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-caps text-label-caps text-primary uppercase">90 Minuten • 150€</span>
+</div>
+</div>
+<div class="md:col-span-4 flex justify-start md:justify-end">
+<button class="border border-secondary-fixed text-secondary-fixed-dim font-headline-md text-headline-md px-6 py-2 rounded-lg hover:bg-secondary-fixed/10 transition-colors duration-300 w-full md:w-auto">
+                            Jetzt buchen
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- The Geheimpaket & Products Bento Grid -->
+<section class="max-w-7xl mx-auto mb-section-gap">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-4">Das Geheimpaket &amp; Luxuspflege</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Vervollständigen Sie Ihre Vorbereitung mit unseren exklusiven Pflegeprodukten und dem mysteriösen 'Geheimpaket', das speziell für die Überraschungen des Hochzeitstages geschnürt wurde.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Geheimpaket (Spans 2 columns on desktop) -->
+<div class="md:col-span-2 glass-card rounded-2xl p-8 relative overflow-hidden group">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-30 group-hover:opacity-40 transition-opacity duration-500" data-alt="A beautifully wrapped, luxurious gift box in soft beige with a thin, elegant gold ribbon. It rests on a pristine marble surface surrounded by scattered rose petals and small sage leaves. The lighting is soft, ethereal, and dramatic, creating a sense of mystery and high-end romance." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9j48Bn-p2H784yg6AGlcv1n0GxnVQgTMhB9vKE5L7OQDkpKL0gO_ZLHkd6KMyDjnexjzNddLEtVc2rN_54__YpAqy8xgV9iuAoiZkn_pef7e1GpO7lrUjytckNztR-uvg6fdSMbsqUePAbJgMMHi3zYjJzWkHLOBnBaDQaX3D7t5aP9rYczbuRlufsfMCKIAXiSQ0PwO-IXI_3DZgh36ZaZpgTMBTrMGG3QUirpoWs6GHxeGRdga9')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-white/90 to-white/40"></div>
+</div>
+<div class="relative z-10 h-full flex flex-col justify-end min-h-[300px]">
+<span class="inline-block bg-secondary-fixed/20 text-secondary px-3 py-1 rounded-full font-label-caps text-label-caps mb-4 w-fit">Exklusiv</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Das "Geheimpaket"</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-md">Eine kuratierte Sammlung kleiner Wunder für die Braut. Was genau drin ist? Ein Geheimnis. Aber es enthält alles, was Sie für unerwartete Momente und strahlenden Glanz am Hochzeitstag benötigen.</p>
+<a class="font-headline-md text-headline-md text-secondary-fixed-dim hover:text-secondary-fixed transition-colors flex items-center gap-2" href="#">
+                            Mehr erfahren <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Product 1 -->
+<div class="glass-card rounded-2xl p-6 flex flex-col items-center text-center">
+<div class="w-full aspect-square mb-6 rounded-lg overflow-hidden border border-secondary-fixed/30">
+<img class="object-cover w-full h-full transform hover:scale-105 transition-transform duration-500" data-alt="A sleek, minimalist glass bottle of massage oil resting on a clean white linen surface. Soft, glowing lighting highlights the golden hue of the oil inside. The aesthetic is clean, premium, and serene, fitting a luxury wellness brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj4Q97ZWvOHrns4KigH9wZ1CAIMPMn7BpZKPzTQfg7s4bEaMSwCN9fQ_mpp6182SWB_O72KJsJzoSspqQvt6IRmwg8-5wms4UzjddNO3-0fTV7o8A__wl7wuXgQFBpgtXdl8fCJri6h1cUMjs1U4L6oYAxMLRD2tB2xCVlOFcYmTUO72BOhVsMM-3c-0ZFk7yro836dIIjNg_vYnpRG6D0tfpuLTgHPnzVoX78xaw5140FP2-bjKlt"/>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Golden Glow Körperöl</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 text-sm">Nährendes Elixier für seidig zarte Haut.</p>
+<span class="font-body-lg text-body-lg text-primary mt-auto">45€</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative w-full pt-section-gap pb-12 bg-primary dark:bg-on-primary-fixed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-desktop max-w-7xl mx-auto">
+<!-- Brand -->
+<div class="col-span-1 md:col-span-1">
+<span class="font-headline-md text-headline-md text-on-primary font-bold">Le Rêve</span>
+<p class="font-body-md text-body-md text-on-primary/80 mt-4">
+                    © 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.
+                </p>
+</div>
+<!-- Links -->
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-8 justify-start md:justify-end items-end">
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary hover:translate-x-1 transition-all duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Impressum</a>
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary hover:translate-x-1 transition-all duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Datenschutz</a>
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary hover:translate-x-1 transition-all duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Kontakt</a>
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary hover:translate-x-1 transition-all duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Öffnungszeiten</a>
+</div>
+</div>
+</footer>
+</body></html>

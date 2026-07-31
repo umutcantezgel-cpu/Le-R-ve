@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anfahrt &amp; Parken - Le Rêve</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#496453",
+                        "inverse-surface": "#303030",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#e9c349",
+                        "tertiary-fixed": "#e5e2dd",
+                        "surface": "#fbf9f8",
+                        "surface-bright": "#fbf9f8",
+                        "secondary-container": "#fed65b",
+                        "primary-fixed-dim": "#b0ceb8",
+                        "tertiary-fixed-dim": "#c9c6c2",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#745c00",
+                        "on-surface-variant": "#424843",
+                        "tertiary": "#5f5e5b",
+                        "on-tertiary-fixed-variant": "#474743",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#241a00",
+                        "background": "#fbf9f8",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        "surface-variant": "#e4e2e2",
+                        "tertiary-container": "#a4a29e",
+                        "outline": "#727973",
+                        "surface-container-high": "#eae8e7",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#393936",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#cbead4",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1b1c1c",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-primary-container": "#243e2f",
+                        "on-primary-fixed-variant": "#324c3c",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-primary": "#b0ceb8",
+                        "surface-dim": "#dbd9d9",
+                        "surface-tint": "#496453",
+                        "surface-container": "#efeded",
+                        "outline-variant": "#c2c8c1",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#062013",
+                        "surface-container-low": "#f5f3f3",
+                        "secondary-fixed": "#ffe088",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "secondary": "#735c00",
+                        "primary-container": "#8ca995"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-padding-mobile": "24px",
+                        "section-gap": "120px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "container-padding-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #fbf9f8;
+            color: #1b1c1c;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-top: 1px solid rgba(115, 92, 0, 0.2);
+            box-shadow: 0 32px 64px -15px rgba(140, 169, 149, 0.08);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-secondary/20 shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)]">
+<div class="flex justify-between items-center px-container-padding-mobile md:px-container-padding-desktop py-4 max-w-7xl mx-auto">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold cursor-pointer active:scale-95 transition-all">
+                Le Rêve
+            </div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center space-x-8 font-headline-md text-headline-md font-medium tracking-tight">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Wellness</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Treatments</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Studio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Journal</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Preise</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-[16px] hover:border hover:border-secondary-fixed transition-all duration-300 hidden md:block">
+                Termin buchen
+            </button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-section-gap px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto w-full">
+<!-- Header Section -->
+<section class="text-center mb-16 md:mb-24">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-4">Anfahrt &amp; Parken</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Ihr Weg zu vollkommener Entspannung beginnt hier. Wir haben alle Informationen für eine stressfreie Anreise zu unserem Studio in Berlin für Sie zusammengestellt.
+            </p>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Map Area (Left side on desktop, full width on mobile) -->
+<div class="md:col-span-7 glass-card rounded-xl overflow-hidden relative min-h-[400px] flex flex-col">
+<div class="p-6 border-b border-secondary/10">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                        Standort
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Wellnessallee 1, 10115 Berlin</p>
+</div>
+<!-- Stylized Map Placeholder -->
+<div class="flex-grow relative w-full h-full min-h-[300px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply" data-alt="A highly stylized, minimalist map of central Berlin focused on a location marked 'Wellnessallee 1'. The map uses a soft, light-mode aesthetic with a color palette of sage green, warm beige, and subtle gold accents. The design is elegant, uncluttered, and serene, fitting a premium spa brand. Streets are depicted with fine, crisp lines, and the overall mood is calm and inviting." data-location="Berlin, Germany" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwTXXfWISv4tYyxG5HEuMmV04NHCimIMou-onwnTZCGzmmYIyHRKWz4rsN6xu0RWMPrpR3jK-w7TsrRkv-8oIHpq7o-GG51wG8W48rTYUsNLvftlDrICh5683coa-k_zHbUnk8Kh-lhFB7N69_SL7Z-W6w51Tt05Lo5IQL9YoIsTuqssHIFsxGH4y9y-OcL0_lJG-3Qhz3muGWtC6JpIYLk70RzrCqzQvPHe4MLZK60_NAFbfPmWma"/>
+</div>
+</div>
+<!-- Info Cards (Right side on desktop) -->
+<div class="md:col-span-5 flex flex-col gap-gutter">
+<!-- Public Transport -->
+<div class="glass-card rounded-xl p-8 hover:scale-[1.01] transition-transform duration-300">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[24px]" data-icon="directions_transit">directions_transit</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Öffentliche Verkehrsmittel</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Unser Studio ist hervorragend angebunden.
+                            </p>
+<ul class="mt-4 space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<strong>U-Bahn:</strong> U6 (Naturkundemuseum) - 3 Min. Fußweg
+                                </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<strong>Tram:</strong> M5, M8, M10 (Invalidenpark)
+                                </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<strong>S-Bahn:</strong> Nordbahnhof - 8 Min. Fußweg
+                                </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Parking -->
+<div class="glass-card rounded-xl p-8 hover:scale-[1.01] transition-transform duration-300 flex-grow">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]" data-icon="local_parking">local_parking</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Parkmöglichkeiten</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                                Entspannt ankommen. Wir bieten Ihnen exklusive Parkmöglichkeiten direkt am Studio.
+                            </p>
+<div class="space-y-4">
+<div class="bg-surface-container-low p-4 rounded-lg border border-outline-variant/30">
+<h4 class="font-headline-sm text-primary mb-1">Eigene Kundenparkplätze</h4>
+<p class="font-body-sm text-on-surface-variant">Im Innenhof stehen 3 kostenfreie Parkplätze für die Dauer Ihres Aufenthalts zur Verfügung. Bitte bei Buchung reservieren.</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg border border-outline-variant/30">
+<h4 class="font-headline-sm text-primary mb-1">Parkhaus in der Nähe</h4>
+<p class="font-body-sm text-on-surface-variant">Parkhaus "Luisenstraße" (2 Gehminuten entfernt). Wir erstatten Ihnen 50% der Parkgebühren für die Dauer Ihrer Behandlung.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="relative w-full pt-section-gap pb-12 bg-primary dark:bg-on-primary-fixed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-headline-md text-headline-md text-on-primary font-bold mb-4">
+                    Le Rêve
+                </div>
+<p class="font-body-md text-body-md text-on-primary/80 max-w-sm">
+                    Ein Wahrer Traum. Ihr Sanctuary für ganzheitliches Wohlbefinden und innere Balance in Berlin.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline-sm text-on-primary mb-4 font-semibold">Links</h4>
+<ul class="space-y-2 font-body-md text-body-md">
+<li><a class="text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 inline-block focus:ring-2 focus:ring-secondary-fixed" href="#">Impressum</a></li>
+<li><a class="text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 inline-block focus:ring-2 focus:ring-secondary-fixed" href="#">Datenschutz</a></li>
+<li><a class="text-secondary-fixed font-semibold focus:ring-2 focus:ring-secondary-fixed" href="#">Kontakt</a></li>
+<li><a class="text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 inline-block focus:ring-2 focus:ring-secondary-fixed" href="#">Öffnungszeiten</a></li>
+</ul>
+</div>
+</div>
+<div class="px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto mt-12 pt-8 border-t border-on-primary/10">
+<p class="font-body-md text-body-md text-on-primary/80 text-center md:text-left">
+                © 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.
+            </p>
+</div>
+</footer>
+</body></html>

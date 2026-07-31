@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Philosophie &amp; Das Le Rêve Erlebnis</title>
+<!-- Google Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#f2f0f0",
+                        "primary-fixed": "#cbead4",
+                        "surface-dim": "#dbd9d9",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#b0ceb8",
+                        "on-tertiary-fixed-variant": "#474743",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c2c8c1",
+                        "on-background": "#1b1c1c",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-surface": "#1b1c1c",
+                        "on-secondary-container": "#745c00",
+                        "surface": "#fbf9f8",
+                        "on-secondary-fixed": "#241a00",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "surface-container-low": "#f5f3f3",
+                        "on-primary-container": "#243e2f",
+                        "surface-tint": "#496453",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-tertiary-container": "#393936",
+                        "inverse-primary": "#b0ceb8",
+                        "tertiary-fixed": "#e5e2dd",
+                        "secondary": "#735c00",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#fbf9f8",
+                        "primary": "#496453",
+                        "surface-container-high": "#eae8e7",
+                        "tertiary-fixed-dim": "#c9c6c2",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#303030",
+                        "surface-container": "#efeded",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#fed65b",
+                        "on-surface-variant": "#424843",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-primary-fixed": "#062013",
+                        "outline": "#727973",
+                        "on-primary-fixed-variant": "#324c3c",
+                        "tertiary": "#5f5e5b",
+                        "background": "#fbf9f8",
+                        "primary-container": "#8ca995",
+                        "secondary-fixed": "#ffe088",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e4e2e2",
+                        "tertiary-container": "#a4a29e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-padding-desktop": "80px",
+                        "section-gap": "120px",
+                        "container-padding-mobile": "24px",
+                        "unit": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Playfair Display"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .ambient-shadow {
+            box-shadow: 0 32px 64px -15px rgba(140, 169, 149, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-white/60 dark:bg-black/60 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-secondary/20 backdrop-blur-md shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)]">
+<div class="flex justify-between items-center px-container-padding-desktop py-4 max-w-full mx-auto max-md:px-container-padding-mobile">
+<!-- Brand -->
+<a class="font-headline-lg text-headline-lg text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold hover:scale-[1.02] transition-transform duration-300" href="#">
+                Le Rêve
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-headline-md text-headline-md font-medium tracking-tight text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Wellness</a>
+<a class="font-headline-md text-headline-md font-medium tracking-tight text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Treatments</a>
+<!-- Active Link: Studio (closest to Philosophy & Experience) -->
+<a class="font-headline-md text-headline-md font-medium tracking-tight text-secondary dark:text-secondary-fixed border-b border-secondary pb-1 cursor-pointer active:scale-95 transition-all flex-col" href="#">Studio</a>
+<a class="font-headline-md text-headline-md font-medium tracking-tight text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Journal</a>
+<a class="font-headline-md text-headline-md font-medium tracking-tight text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Preise</a>
+</div>
+<!-- CTA -->
+<button class="hidden md:block bg-primary text-on-primary font-body-md text-body-md px-6 py-3 rounded-lg hover:border-secondary hover:border transition-all duration-300">
+                Termin buchen
+            </button>
+<!-- Mobile Menu Icon (Placeholder for functionality) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-[120px] pb-section-gap">
+<!-- Hero Section -->
+<section class="px-container-padding-desktop max-md:px-container-padding-mobile max-w-7xl mx-auto mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 order-2 lg:order-1 flex flex-col gap-6">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Unsere Philosophie</span>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-4">Ein Sanctuary der absoluten Ruhe.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Das Le Rêve Erlebnis ist mehr als nur eine Behandlung. Es ist eine sorgfältig kuratierte Auszeit aus dem Alltag, entworfen, um Frauen und werdenden Müttern einen Raum tiefgreifender Erholung und sanfter Erneuerung zu bieten.
+                    </p>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 relative">
+<!-- Gold Frame styling around hero image -->
+<div class="absolute inset-0 border-[4px] md:border-[8px] border-secondary/20 translate-x-4 translate-y-4 rounded-xl -z-10"></div>
+<img class="w-full h-[500px] object-cover rounded-xl shadow-sm" data-alt="A serene, high-end spa interior focusing on a beautifully lit treatment room. Sunlight gently filters through sheer white linen curtains, casting soft shadows across a minimalist, beige treatment bed dressed in crisp, high-thread-count white linens. In the foreground, a delicate branch of fresh eucalyptus rests in a handcrafted ceramic vase. The color palette is strictly soft sage green, warm off-white, and subtle gold accents. The atmosphere is immensely calming, maternal, and luxurious, typical of a premium wellness sanctuary." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGyoFCIRGVO6o9ohnwBw91L_ZoLkJVGpKWrD35QXzJDIpr50D2kKceC6vqzxn66e7zI-LMuhUbG_kAjAXVcFT0sTpPVYyW2vzGL53VJ2VDkiYyrqBvDQWLe58vzIUkW3u5hse87LfAfV0IwfjrF4em9oaQ0KxEDEuFk2Hp8rgAw9Xt6XaVbmg6ohSGkRgkBVSLqvwQFlWZGQtxEuAa7xmlh2CH_gubpo9avh6i4rYRLOckGojPGSzJ"/>
+</div>
+</div>
+</section>
+<!-- The Experience (Atmosphere Details) - Asymmetric Layout -->
+<section class="bg-surface-container-low py-section-gap px-container-padding-desktop max-md:px-container-padding-mobile">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Details, die berühren</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Jedes Element in unserem Studio wurde mit purer Intention gewählt, um eine Atmosphäre der Geborgenheit und des luxuriösen Wohlbefindens zu schaffen.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Detail Card 1: Scents -->
+<div class="glass-panel ambient-shadow rounded-xl p-8 border border-secondary/20 flex flex-col h-full transform hover:-translate-y-1 transition-transform duration-300 group">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-6 text-primary group-hover:bg-primary-container/40 transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">air</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Signatur Raumdüfte</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                            Beim Betreten umhüllt Sie ein sanfter, exklusiv für Le Rêve kreierter Duft aus weißem Tee, dezenter Bergamotte und beruhigendem Lavendel – sanft genug für die feinen Sinne werdender Mütter.
+                        </p>
+</div>
+<!-- Detail Card 2: Music -->
+<div class="glass-panel ambient-shadow rounded-xl p-8 border border-secondary/20 flex flex-col h-full transform hover:-translate-y-1 transition-transform duration-300 group lg:-translate-y-8">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-6 text-primary group-hover:bg-primary-container/40 transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">music_note</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Klang-Atmosphäre</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                            Eine sorgfältig abgestimmte akustische Landschaft aus binauralen Beats und sanften Naturklängen verlangsamt den Puls und begleitet Sie in tiefe Entspannungszustände.
+                        </p>
+</div>
+<!-- Detail Card 3: Towels -->
+<div class="glass-panel ambient-shadow rounded-xl p-8 border border-secondary/20 flex flex-col h-full transform hover:-translate-y-1 transition-transform duration-300 group">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-6 text-primary group-hover:bg-primary-container/40 transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">spa</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Taktiler Luxus</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                            Erleben Sie die Umarmung unserer ultra-flauschigen, vorgewärmten Bio-Baumwollhandtücher. Das Interieur glänzt durch hochwertige, organische Texturen und warme Materialien.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Studio Amenities - Bento Grid -->
+<section class="py-section-gap px-container-padding-desktop max-md:px-container-padding-mobile max-w-7xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-12">Ihre Wohlfühl-Annehmlichkeiten</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[600px]">
+<!-- Bento Item 1: Large Image -->
+<div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="A luxurious, minimalist coffee and tea station in a high-end spa. A sleek, modern ceramic teapot in a matte beige finish sits next to delicate matching teacups on a warm oak tray. Beside it, small glass jars hold loose-leaf herbal teas and fresh lemon slices. The background is slightly out of focus, showing a soft sage-green wall and a glowing ambient light sconce. The lighting is soft and ethereal, emphasizing the feeling of quiet luxury and calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmU2ab7cqUhNpMN_4XlKYufts5wRrEEKXy0bvCebKNNplkJPJsPNR4aYPNtpqyH_dhT-ekESzM862QZCCsOAProgpSaAU5VoiqtZEV6X_FF4t4kgf0NUYhsBZzbtn7VMT_bIkm3VdWGM7wb-qzCXYGX-dCqZfblOKbYHUQrPcgA0LRi2RkmpL3Mfl2C85bnolGzI8ef0Csql871L5RXPO1DAGm1eCfNNzwh5WKs5dBoAZRtBNkOkTT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+<div class="text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Exquisite Tee- &amp; Kaffeebar</h3>
+<p class="font-body-md text-body-md opacity-90">Ausgewählte Kräuteraufgüsse und premium Röstungen, serviert vor oder nach Ihrer Behandlung zur sanften Erdung.</p>
+</div>
+</div>
+</div>
+<!-- Bento Item 2: Cleansers -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container rounded-xl p-8 flex items-center gap-6 border border-secondary/10">
+<div class="w-16 h-16 rounded-full bg-surface-lowest flex-shrink-0 flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; font-size: 32px;">water_drop</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Luxuriöse Reinigung</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Hochwertige, hautverträgliche Cleanser und sanfte Reinigungstücher stehen in unseren Erfrischungsbereichen jederzeit für Sie bereit.</p>
+</div>
+</div>
+<!-- Bento Item 3: Masks -->
+<div class="md:col-span-2 md:row-span-1 glass-panel rounded-xl p-8 flex items-center gap-6 border border-secondary/20 relative overflow-hidden">
+<!-- Subtle background texture/pattern could go here -->
+<div class="w-16 h-16 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center text-primary border border-primary/20">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; font-size: 32px;">face_retouching_natural</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Feuchtigkeitsmasken</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Auf Wunsch reichen wir kühlende, intensiv pflegende Gesichtsmasken während Ihrer Ruhephasen im Studio.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-on-primary-fixed relative w-full pt-section-gap pb-12 flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-desktop max-md:px-container-padding-mobile max-w-7xl mx-auto">
+<!-- Brand Column -->
+<div class="flex flex-col gap-4 md:col-span-1">
+<span class="font-headline-md text-headline-md text-on-primary font-bold">
+                    Le Rêve
+                </span>
+<p class="font-body-md text-body-md text-on-primary/80 mt-4">
+                    © 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.
+                </p>
+</div>
+<!-- Links Columns -->
+<div class="flex flex-col gap-3 md:col-span-1 md:col-start-3">
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed inline-block w-max" href="#">
+                    Impressum
+                </a>
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed inline-block w-max" href="#">
+                    Datenschutz
+                </a>
+</div>
+<div class="flex flex-col gap-3 md:col-span-1">
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed inline-block w-max" href="#">
+                    Kontakt
+                </a>
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed inline-block w-max" href="#">
+                    Öffnungszeiten
+                </a>
+</div>
+</div>
+</footer>
+</body></html>

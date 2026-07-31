@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Geschenkgutscheine - Le Rêve</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#a4a29e",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#393936",
+                        "on-secondary-container": "#745c00",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#474743",
+                        "on-primary-fixed": "#062013",
+                        "outline": "#727973",
+                        "tertiary-fixed": "#e5e2dd",
+                        "surface-bright": "#fbf9f8",
+                        "on-surface": "#1b1c1c",
+                        "surface-container-high": "#eae8e7",
+                        "on-background": "#1b1c1c",
+                        "outline-variant": "#c2c8c1",
+                        "tertiary": "#5f5e5b",
+                        "surface-container-highest": "#e4e2e2",
+                        "inverse-primary": "#b0ceb8",
+                        "on-surface-variant": "#424843",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-container": "#243e2f",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#c9c6c2",
+                        "secondary-container": "#fed65b",
+                        "surface-container": "#efeded",
+                        "primary-fixed": "#cbead4",
+                        "primary": "#496453",
+                        "surface-tint": "#496453",
+                        "error-container": "#ffdad6",
+                        "secondary": "#735c00",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-container-low": "#f5f3f3",
+                        "secondary-fixed-dim": "#e9c349",
+                        "primary-fixed-dim": "#b0ceb8",
+                        "inverse-surface": "#303030",
+                        "surface-variant": "#e4e2e2",
+                        "surface": "#fbf9f8",
+                        "background": "#fbf9f8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#324c3c",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#8ca995",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "surface-dim": "#dbd9d9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-padding-desktop": "80px",
+                        "gutter": "24px",
+                        "container-padding-mobile": "24px",
+                        "unit": "8px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-border {
+            border: 1px solid rgba(115, 92, 0, 0.2);
+        }
+        .gold-border-focus:focus {
+            border-color: #735c00;
+            box-shadow: 0 0 0 1px #735c00;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-secondary/20 shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)]">
+<div class="flex justify-between items-center px-container-padding-mobile md:px-container-padding-desktop py-4 max-w-full mx-auto">
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold">
+                Le Rêve
+            </div>
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-headline-md text-headline-md font-medium tracking-tight hover:scale-[1.02] transition-transform duration-300" href="#">Wellness</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-headline-md text-headline-md font-medium tracking-tight hover:scale-[1.02] transition-transform duration-300" href="#">Treatments</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-headline-md text-headline-md font-medium tracking-tight hover:scale-[1.02] transition-transform duration-300" href="#">Studio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-headline-md text-headline-md font-medium tracking-tight hover:scale-[1.02] transition-transform duration-300" href="#">Journal</a>
+<a class="text-secondary dark:text-secondary-fixed border-b border-secondary pb-1 font-headline-md text-headline-md font-medium tracking-tight hover:scale-[1.02] transition-transform duration-300" href="#">Preise</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl hover:scale-[1.02] hover:border hover:border-secondary transition-all duration-300 font-body-md cursor-pointer active:scale-95">
+                Termin buchen
+            </button>
+</div>
+</header>
+<main class="flex-grow pt-[120px] pb-section-gap px-container-padding-mobile md:px-container-padding-desktop">
+<!-- Hero Section -->
+<section class="max-w-4xl mx-auto text-center mb-16">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-6">Verschenken Sie Momente der Ruhe</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Ein Gutschein von Le Rêve ist mehr als nur ein Geschenk – es ist eine Einladung, dem Alltag zu entfliehen und pure Entspannung in unserem luxuriösen Spa zu erleben.
+            </p>
+</section>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter lg:gap-[80px]">
+<!-- Left Column: Visuals & Design Selection -->
+<div class="space-y-8">
+<!-- Main Image Preview -->
+<div class="relative rounded-xl overflow-hidden shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)] bg-white p-4 gold-border">
+<img class="w-full h-auto rounded-lg object-cover aspect-[4/3]" data-alt="A beautifully designed gift voucher for a luxury spa, featuring soft sage green and cream colors with elegant gold foil accents, resting on a clean white marble surface surrounded by subtle spa elements like a smooth stone and a sprig of eucalyptus. High-end, serene aesthetic, light and airy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy1z70-CqbWZ50cMMqHw-PMPCgoSohf6Xqx2Fyvla3_r2r0jjbZc86OtANi0pQiRdMY6F-wxy1mEFYzPdQDjZaNbVj030A_Q0j_8mZ4Z_n9LtENVkN4IceMk3QxixPlTyaT0ZICILr-Pj4Q_4qazuzSek-D_2mq2rGjXgm7aSrBMQRmeNLOmrrnsPYkRbRSYmYZ89VpNy1RAZQXqzLZ-AUf7LLskhthmrMnNkE8S4peu1K17W9StCI"/>
+<div class="absolute top-8 right-8 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full gold-border">
+<span class="font-label-caps text-label-caps text-secondary-fixed-variant">Digitales Design</span>
+</div>
+</div>
+<!-- Design Options -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Wählen Sie Ihr Design</h3>
+<div class="grid grid-cols-2 gap-4">
+<button class="relative rounded-lg overflow-hidden border-2 border-secondary p-1 focus:outline-none transition-all hover:scale-[1.02]">
+<img class="w-full h-32 object-cover rounded" data-alt="Close up of a digital spa gift voucher on a smartphone screen, displaying a minimalist sage and cream design with elegant typography. The setting is bright and luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdKy2BHwKS6uKVA0QTGSHW0h4K4C_j2JIujqevtke_L2r7c0D4BsHgCmFZXAoaQK-l366dQ7JNYqQw8yM3qpDhBtp83VQtFt9yFrImrK3Icv1apVMyVcnrc6mA8Sbyj9V1wGLz1LP-DtJ8tj5BS75LOH8GemCSzGFffNk6V-sMalYJeYOkbSRrIHeWqw145cxmXPO3TZOpTA_MQM5nrCnYRSa5OXROu6__djhmvcxKwBe9BhC095C-"/>
+<div class="absolute bottom-0 inset-x-0 bg-black/40 backdrop-blur-sm p-2 text-center">
+<span class="font-label-caps text-label-caps text-white">Digital (E-Mail)</span>
+</div>
+</button>
+<button class="relative rounded-lg overflow-hidden border border-outline-variant p-1 opacity-70 hover:opacity-100 hover:border-secondary focus:outline-none transition-all hover:scale-[1.02]">
+<img class="w-full h-32 object-cover rounded" data-alt="A premium physical gift card nestled in a textured cream envelope with a gold wax seal, lying on a soft linen cloth. Warm, inviting lighting, sophisticated luxury spa aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1GRLCdZPuunAfazEc_dMf9U9P8mpKUVbAJa43v9E-wNFi_eO0x6OjXkFLm1dASrxc0ezmjRM0M1w2Vk65h3tnoeeUb_aGOqOAKXfQ3-06-IAMz7wzO_34CgbjEJ51JJQmxcckR2Nzvhpu4Q_sR_6bgmcs2PidyT8HXi6HGGY1nPdXcSXBkgRYeHoUpVZEFAmMm3OhRSYMmHL48jA3rxf-YI-9vSxrvottBQNjrbsPXptEcSVdUgVu"/>
+<div class="absolute bottom-0 inset-x-0 bg-black/40 backdrop-blur-sm p-2 text-center">
+<span class="font-label-caps text-label-caps text-white">Edel Verpackt (Post)</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Form & Configuration -->
+<div class="bg-white/60 backdrop-blur-xl rounded-xl p-8 lg:p-12 shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)] gold-border flex flex-col justify-between">
+<div class="space-y-8">
+<!-- Value Selection -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Gutscheinwert</h3>
+<div class="grid grid-cols-3 gap-3 mb-4">
+<button class="py-3 px-4 rounded-lg bg-surface-container-low border border-outline-variant text-on-surface hover:border-secondary transition-colors font-body-md text-body-md">50 €</button>
+<button class="py-3 px-4 rounded-lg bg-primary-container/20 border-2 border-secondary text-on-surface font-body-md text-body-md">100 €</button>
+<button class="py-3 px-4 rounded-lg bg-surface-container-low border border-outline-variant text-on-surface hover:border-secondary transition-colors font-body-md text-body-md">150 €</button>
+<button class="py-3 px-4 rounded-lg bg-surface-container-low border border-outline-variant text-on-surface hover:border-secondary transition-colors font-body-md text-body-md">200 €</button>
+<button class="py-3 px-4 rounded-lg bg-surface-container-low border border-outline-variant text-on-surface hover:border-secondary transition-colors font-body-md text-body-md">250 €</button>
+<button class="py-3 px-4 rounded-lg bg-surface-container-low border border-outline-variant text-on-surface hover:border-secondary transition-colors font-body-md text-body-md">500 €</button>
+</div>
+<div class="relative">
+<input class="w-full bg-[#F5F2ED] border-0 border-b border-primary py-3 px-4 font-body-md text-body-md focus:ring-0 focus:border-b-2 focus:border-primary transition-all" placeholder="Anderer Betrag" type="number"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant">€</span>
+</div>
+</div>
+<!-- Personalization -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Persönliche Note</h3>
+<div class="space-y-4">
+<input class="w-full bg-[#F5F2ED] border-0 border-b border-primary py-3 px-4 font-body-md text-body-md focus:ring-0 focus:border-b-2 focus:border-primary transition-all" placeholder="Für wen ist der Gutschein? (Optional)" type="text"/>
+<input class="w-full bg-[#F5F2ED] border-0 border-b border-primary py-3 px-4 font-body-md text-body-md focus:ring-0 focus:border-b-2 focus:border-primary transition-all" placeholder="Von wem ist der Gutschein? (Optional)" type="text"/>
+<textarea class="w-full bg-[#F5F2ED] border-0 border-b border-primary py-3 px-4 font-body-md text-body-md focus:ring-0 focus:border-b-2 focus:border-primary transition-all resize-none" placeholder="Ihre persönliche Nachricht..." rows="3"></textarea>
+</div>
+</div>
+</div>
+<!-- Action Area -->
+<div class="mt-12 pt-8 border-t border-outline-variant/30">
+<div class="flex justify-between items-center mb-6">
+<span class="font-body-lg text-body-lg text-on-surface-variant">Gesamtbetrag</span>
+<span class="font-headline-md text-headline-md text-on-surface">100,00 €</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-headline-md text-headline-md flex items-center justify-center gap-2 hover:bg-on-primary-container transition-colors hover:scale-[1.01] active:scale-95 hover:border hover:border-secondary shadow-sm">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+                        In den Warenkorb
+                    </button>
+<p class="text-center font-label-caps text-label-caps text-on-surface-variant mt-4">Sichere Zahlung &amp; sofortige Zustellung per E-Mail möglich.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="relative w-full pt-section-gap pb-12 bg-primary dark:bg-on-primary-fixed grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-mobile md:px-container-padding-desktop max-w-full mx-auto">
+<div class="md:col-span-1 mb-8 md:mb-0">
+<div class="font-headline-md text-headline-md text-on-primary font-bold mb-4">Le Rêve</div>
+<p class="font-body-md text-body-md text-on-primary/80">© 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.</p>
+</div>
+<nav class="md:col-span-3 flex flex-col md:flex-row gap-4 md:gap-8 justify-end items-start md:items-center">
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Impressum</a>
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Datenschutz</a>
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Kontakt</a>
+<a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Öffnungszeiten</a>
+</nav>
+</footer>
+</body></html>

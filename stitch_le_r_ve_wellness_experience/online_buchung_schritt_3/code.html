@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Le Rêve - Termin Buchen (Schritt 3)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-container": "#a4a29e",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-container": "#393936",
+                      "on-secondary-container": "#745c00",
+                      "on-secondary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed-variant": "#474743",
+                      "on-primary-fixed": "#062013",
+                      "outline": "#727973",
+                      "tertiary-fixed": "#e5e2dd",
+                      "surface-bright": "#fbf9f8",
+                      "on-surface": "#1b1c1c",
+                      "surface-container-high": "#eae8e7",
+                      "on-background": "#1b1c1c",
+                      "outline-variant": "#c2c8c1",
+                      "tertiary": "#5f5e5b",
+                      "surface-container-highest": "#e4e2e2",
+                      "inverse-primary": "#b0ceb8",
+                      "on-surface-variant": "#424843",
+                      "on-secondary-fixed": "#241a00",
+                      "on-primary-container": "#243e2f",
+                      "on-primary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed-dim": "#c9c6c2",
+                      "secondary-container": "#fed65b",
+                      "surface-container": "#efeded",
+                      "primary-fixed": "#cbead4",
+                      "primary": "#496453",
+                      "surface-tint": "#496453",
+                      "error-container": "#ffdad6",
+                      "secondary": "#735c00",
+                      "secondary-fixed": "#ffe088",
+                      "on-secondary-fixed-variant": "#574500",
+                      "inverse-on-surface": "#f2f0f0",
+                      "surface-container-low": "#f5f3f3",
+                      "secondary-fixed-dim": "#e9c349",
+                      "primary-fixed-dim": "#b0ceb8",
+                      "inverse-surface": "#303030",
+                      "surface-variant": "#e4e2e2",
+                      "surface": "#fbf9f8",
+                      "background": "#fbf9f8",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#324c3c",
+                      "on-error-container": "#93000a",
+                      "primary-container": "#8ca995",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "surface-dim": "#dbd9d9"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-padding-desktop": "80px",
+                      "gutter": "24px",
+                      "container-padding-mobile": "24px",
+                      "unit": "8px",
+                      "section-gap": "120px"
+              },
+              "fontFamily": {
+                      "label-caps": ["Plus Jakarta Sans"],
+                      "headline-xl": ["Playfair Display"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "headline-md": ["Playfair Display"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "headline-lg": ["Playfair Display"],
+                      "headline-lg-mobile": ["Playfair Display"]
+              },
+              "fontSize": {
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .input-zen {
+            background-color: #F5F2ED;
+            border: none;
+            border-bottom: 1px solid #8ca995;
+            transition: all 0.3s ease;
+        }
+        .input-zen:focus {
+            outline: none;
+            border-bottom-width: 2px;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- Top Navigation (Hidden as per intent logic: Transactional flow) -->
+<!-- Nav is suppressed to keep focus on booking completion -->
+<main class="flex-grow pt-24 pb-section-gap px-container-padding-mobile md:px-container-padding-desktop flex flex-col items-center">
+<!-- Header -->
+<div class="text-center mb-12 max-w-2xl mx-auto w-full">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Ihre Buchung Abschließen</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Bitte überprüfen Sie Ihre Daten für den entspannenden Aufenthalt.</p>
+</div>
+<!-- Progress Tracker "The Dream Tracker" -->
+<div class="w-full max-w-3xl mb-16 px-4">
+<div class="flex justify-between items-center relative">
+<!-- Line -->
+<div class="absolute top-1/2 left-0 w-full h-0.5 bg-surface-variant -z-10 -translate-y-1/2"></div>
+<!-- Active Line Segment -->
+<div class="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-primary to-secondary -z-10 -translate-y-1/2"></div>
+<!-- Step 1 -->
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-caps text-label-caps shadow-sm">
+<span class="material-symbols-outlined" style="font-size: 16px;">check</span>
+</div>
+<span class="mt-2 font-label-caps text-label-caps text-on-surface-variant hidden md:block">Behandlung</span>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-caps text-label-caps shadow-sm">
+<span class="material-symbols-outlined" style="font-size: 16px;">check</span>
+</div>
+<span class="mt-2 font-label-caps text-label-caps text-on-surface-variant hidden md:block">Datum &amp; Zeit</span>
+</div>
+<!-- Step 3 (Active) -->
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center font-label-caps text-label-caps border border-secondary shadow-sm">
+                        3
+                    </div>
+<span class="mt-2 font-label-caps text-label-caps text-on-surface hidden md:block">Bestätigung</span>
+</div>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter w-full max-w-6xl">
+<!-- Form Section (Left Column) -->
+<div class="lg:col-span-7 flex flex-col gap-8">
+<section class="glass-panel p-8 rounded-xl border-t border-secondary/30 shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)]">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">person</span>
+                        Ihre Daten
+                    </h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2 ml-1" for="firstName">Vorname *</label>
+<input class="input-zen rounded-t-DEFAULT px-4 py-3 text-on-surface w-full" id="firstName" required="" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2 ml-1" for="lastName">Nachname *</label>
+<input class="input-zen rounded-t-DEFAULT px-4 py-3 text-on-surface w-full" id="lastName" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2 ml-1" for="email">E-Mail Adresse *</label>
+<input class="input-zen rounded-t-DEFAULT px-4 py-3 text-on-surface w-full" id="email" required="" type="email"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2 ml-1" for="phone">Telefonnummer</label>
+<input class="input-zen rounded-t-DEFAULT px-4 py-3 text-on-surface w-full" id="phone" type="tel"/>
+<p class="text-xs text-on-surface-variant/70 mt-1 ml-1">Für kurzfristige Rückfragen zu Ihrem Termin.</p>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2 ml-1" for="notes">Anmerkungen &amp; Wünsche</label>
+<textarea class="input-zen rounded-t-DEFAULT px-4 py-3 text-on-surface w-full resize-none" id="notes" placeholder="Besondere Bedürfnisse, Schwangerschaftswoche..." rows="3"></textarea>
+</div>
+</form>
+</section>
+</div>
+<!-- Summary Section (Right Column) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<aside class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/30 sticky top-32">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6 border-b border-primary-container/20 pb-4">Termin Zusammenfassung</h3>
+<div class="space-y-4 mb-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">spa</span>
+<div>
+<h4 class="font-body-lg text-body-lg text-on-surface font-medium">Signature Prenatal Massage</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">60 Minuten pure Entspannung</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">calendar_today</span>
+<div>
+<h4 class="font-body-lg text-body-lg text-on-surface font-medium">Donnerstag, 24. Oktober</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">14:00 - 15:00 Uhr</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">person</span>
+<div>
+<h4 class="font-body-lg text-body-lg text-on-surface font-medium">Behandlerin</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Elena M. (Senior Therapist)</p>
+</div>
+</div>
+</div>
+<div class="border-t border-primary-container/20 pt-6 mb-8 flex justify-between items-center">
+<span class="font-body-lg text-body-lg text-on-surface font-medium">Gesamtbetrag</span>
+<span class="font-headline-md text-headline-md text-secondary">125 €</span>
+</div>
+<button class="w-full bg-primary hover:bg-surface-tint text-on-primary rounded-lg py-4 px-6 font-label-caps text-label-caps tracking-wider transition-all duration-300 hover:shadow-lg border border-transparent hover:border-secondary flex items-center justify-center gap-2 group">
+                        Jetzt verbindlich buchen
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="mt-6 text-center">
+<p class="text-xs text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined" style="font-size: 14px;">info</span>
+                            Zahlung erfolgt vor Ort.
+                        </p>
+</div>
+</aside>
+</div>
+</div>
+<!-- Cancellation Policy -->
+<div class="mt-16 max-w-3xl text-center">
+<p class="font-body-md text-body-md text-on-surface-variant/80 text-sm">
+                Mit Klick auf "Jetzt verbindlich buchen" akzeptieren Sie unsere AGB. 
+                Kostenfreie Stornierungen sind bis zu 24 Stunden vor Terminbeginn möglich. 
+                Bei späteren Absagen behalten wir uns vor, 50% des Behandlungspreises in Rechnung zu stellen.
+            </p>
+</div>
+</main>
+<!-- Footer (Suppressed for transactional flow focus) -->
+</body></html>

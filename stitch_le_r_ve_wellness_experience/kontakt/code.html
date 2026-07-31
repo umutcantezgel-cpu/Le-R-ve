@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Le Rêve - Kontakt</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#496453",
+                      "inverse-surface": "#303030",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed-dim": "#e9c349",
+                      "tertiary-fixed": "#e5e2dd",
+                      "surface": "#fbf9f8",
+                      "surface-bright": "#fbf9f8",
+                      "secondary-container": "#fed65b",
+                      "primary-fixed-dim": "#b0ceb8",
+                      "tertiary-fixed-dim": "#c9c6c2",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-container": "#745c00",
+                      "on-surface-variant": "#424843",
+                      "tertiary": "#5f5e5b",
+                      "on-tertiary-fixed-variant": "#474743",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed": "#241a00",
+                      "background": "#fbf9f8",
+                      "on-tertiary": "#ffffff",
+                      "on-background": "#1b1c1c",
+                      "surface-variant": "#e4e2e2",
+                      "tertiary-container": "#a4a29e",
+                      "outline": "#727973",
+                      "surface-container-high": "#eae8e7",
+                      "inverse-on-surface": "#f2f0f0",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-container": "#393936",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#cbead4",
+                      "error": "#ba1a1a",
+                      "on-surface": "#1b1c1c",
+                      "surface-container-highest": "#e4e2e2",
+                      "on-primary-container": "#243e2f",
+                      "on-primary-fixed-variant": "#324c3c",
+                      "on-secondary-fixed-variant": "#574500",
+                      "inverse-primary": "#b0ceb8",
+                      "surface-dim": "#dbd9d9",
+                      "surface-tint": "#496453",
+                      "surface-container": "#efeded",
+                      "outline-variant": "#c2c8c1",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed": "#062013",
+                      "surface-container-low": "#f5f3f3",
+                      "secondary-fixed": "#ffe088",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "secondary": "#735c00",
+                      "primary-container": "#8ca995"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-padding-mobile": "24px",
+                      "section-gap": "120px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "container-padding-desktop": "80px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "headline-xl": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        
+        /* Glassmorphism utilities */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        
+        .ambient-shadow {
+            box-shadow: 0 32px 64px -15px rgba(140, 169, 149, 0.08);
+        }
+        
+        /* Form inputs */
+        .input-zen {
+            background-color: #F5F2ED;
+            border: none;
+            border-bottom: 1px solid theme('colors.outline-variant');
+            transition: all 0.3s ease;
+        }
+        .input-zen:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom: 2px solid theme('colors.primary');
+            background-color: #F8F6F3;
+        }
+
+        /* Gold accents */
+        .gold-border {
+            border: 1px solid theme('colors.secondary-fixed-dim');
+        }
+        .gold-accent-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, theme('colors.secondary-fixed-dim'), transparent);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-secondary/20 backdrop-blur-md shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)]">
+<div class="flex justify-between items-center px-container-padding-mobile md:px-container-padding-desktop py-4 max-w-full mx-auto">
+<!-- Brand -->
+<a class="font-headline-lg text-headline-lg md:font-headline-lg-mobile md:text-headline-lg-mobile text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold cursor-pointer active:scale-95 transition-all" href="#">
+                Le Rêve
+            </a>
+<!-- Links (Desktop) -->
+<div class="hidden md:flex items-center space-x-8 font-headline-md text-headline-md font-medium tracking-tight">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Wellness</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Treatments</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Studio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Journal</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Preise</a>
+<a class="text-secondary dark:text-secondary-fixed border-b border-secondary pb-1 cursor-pointer active:scale-95 transition-all" href="#">Kontakt</a>
+</div>
+<!-- Action -->
+<button class="hidden md:block bg-primary text-on-primary font-body-md text-body-md px-6 py-2 rounded-lg hover:scale-[1.02] transition-transform duration-300 border border-transparent hover:border-secondary-fixed-dim cursor-pointer active:scale-95 transition-all">
+                Termin buchen
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[104px] pb-section-gap relative">
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-surface-variant opacity-20 rounded-bl-[200px] -z-10 blur-3xl"></div>
+<div class="max-w-7xl mx-auto px-container-padding-mobile md:px-container-padding-desktop">
+<!-- Page Header -->
+<div class="text-center mb-16 md:mb-24 mt-12 md:mt-20">
+<p class="font-label-caps text-label-caps text-secondary tracking-widest mb-4">VERBINDUNG</p>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6">Wir sind für Sie da.</h1>
+<div class="gold-accent-line w-24 mx-auto mb-6"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Ob Sie Fragen zu unseren Behandlungen haben oder eine individuelle Beratung für Ihre Wellness-Reise wünschen – unser Team erwartet Sie.
+                </p>
+</div>
+<!-- Bento Grid Layout for Contact -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
+<!-- Left Column: Information (5 cols) -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Direct Contact Card -->
+<div class="glass-panel ambient-shadow rounded-xl p-8 border-t border-secondary-fixed-dim/30">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Direkter Kontakt</h2>
+<div class="space-y-6">
+<div class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-4 mt-1" style="font-variation-settings: 'FILL' 0;">location_on</span>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium">Studio Le Rêve</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Prinzregentenstraße 42<br/>80538 München</p>
+</div>
+</div>
+<div class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-4 mt-1" style="font-variation-settings: 'FILL' 0;">call</span>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium">Telefon</p>
+<p class="font-body-md text-body-md text-on-surface-variant">+49 89 123 456 78</p>
+</div>
+</div>
+<div class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-4 mt-1" style="font-variation-settings: 'FILL' 0;">mail</span>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium">E-Mail</p>
+<p class="font-body-md text-body-md text-on-surface-variant">bonjour@lereve.de</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Opening Hours Card -->
+<div class="glass-panel ambient-shadow rounded-xl p-8 border-t border-secondary-fixed-dim/30">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Öffnungszeiten</h2>
+<div class="space-y-3 font-body-md text-body-md">
+<div class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span class="text-on-surface-variant">Montag - Freitag</span>
+<span class="text-on-surface font-medium">09:00 - 20:00</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 pb-2 pt-2">
+<span class="text-on-surface-variant">Samstag</span>
+<span class="text-on-surface font-medium">10:00 - 18:00</span>
+</div>
+<div class="flex justify-between pt-2">
+<span class="text-on-surface-variant">Sonntag</span>
+<span class="text-on-surface font-medium text-secondary">Geschlossen</span>
+</div>
+</div>
+</div>
+<!-- Image Card -->
+<div class="rounded-xl overflow-hidden ambient-shadow h-48 relative">
+<div class="bg-cover bg-center w-full h-full" data-alt="A serene, minimalist wellness studio interior in Munich. Soft, high-key lighting filters through sheer curtains, illuminating sage green walls and elegant gold accents. The space feels maternal, luxurious, and calming, with organic shapes and a feeling of airy quiet luxury." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDr0kX5G4F9Npdl4BjLDnQbg5VWE_YgOh54yncr-HhyYHcY3Wryc-Y3ZbaMf7M0pEmKoDOhlTmL5ZS4Qr7MC_NZHBCI7pJwQUwBdHLblkN92VeQLXkgqKYb8AKgffAlETtY9XNurV57_BnshPXiCopDZ3EIou-2OCDHuNKOKne-VH96TDlzxp33w0pUnsAe0KRBI9KIXyzYdpkqIP9xZRHfXYb6DhK45ucenVUHWc9bhTJP2Gdwf61K')"></div>
+</div>
+</div>
+<!-- Right Column: Form (7 cols) -->
+<div class="lg:col-span-7">
+<div class="glass-panel ambient-shadow rounded-xl p-8 md:p-12 border-t border-secondary-fixed-dim/50 h-full">
+<h2 class="font-headline-lg text-headline-lg md:font-headline-lg-mobile md:text-headline-lg-mobile text-primary mb-2">Schreiben Sie uns</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Wir bemühen uns, Ihre Anfrage innerhalb von 24 Stunden zu beantworten.</p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="firstName">VORNAME</label>
+<input class="input-zen w-full px-4 py-3 rounded-t-sm" id="firstName" placeholder="Ihr Vorname" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="lastName">NACHNAME</label>
+<input class="input-zen w-full px-4 py-3 rounded-t-sm" id="lastName" placeholder="Ihr Nachname" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="email">E-MAIL ADRESSE</label>
+<input class="input-zen w-full px-4 py-3 rounded-t-sm" id="email" placeholder="ihre@email.de" type="email"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="interest">INTERESSE</label>
+<select class="input-zen w-full px-4 py-3 rounded-t-sm appearance-none text-on-surface-variant" id="interest">
+<option value="">Bitte wählen Sie ein Thema</option>
+<option value="termin">Terminanfrage</option>
+<option value="beratung">Individuelle Beratung</option>
+<option value="schwangerschaft">Schwangerschafts-Treatments</option>
+<option value="sonstiges">Sonstige Anliegen</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="message">IHRE NACHRICHT</label>
+<textarea class="input-zen w-full px-4 py-3 rounded-t-sm resize-none" id="message" placeholder="Wie können wir Ihnen helfen?" rows="5"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary font-body-md text-body-md py-4 rounded-lg hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-colors duration-300 border border-transparent hover:border-secondary-fixed-dim shadow-sm flex justify-center items-center group" type="button">
+                                    Nachricht senden
+                                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="relative w-full pt-section-gap pb-12 bg-primary dark:bg-on-primary-fixed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto">
+<!-- Brand -->
+<div class="col-span-1 md:col-span-1 flex flex-col justify-between">
+<span class="font-headline-md text-headline-md text-on-primary font-bold">Le Rêve</span>
+<p class="font-body-md text-body-md text-on-primary/80 mt-4 md:mt-0 text-sm">
+                    © 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.
+                </p>
+</div>
+<!-- Links -->
+<div class="col-span-1 md:col-span-3 flex flex-col md:flex-row md:justify-end gap-4 md:gap-8 font-body-md text-body-md text-on-primary/80 mt-8 md:mt-0">
+<a class="text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Impressum</a>
+<a class="text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Datenschutz</a>
+<a class="text-secondary-fixed font-semibold hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Kontakt</a>
+<a class="text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 transition-transform duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Öffnungszeiten</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Le Rêve - Vorbereitung auf deinen Termin</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:wght@400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#496453",
+                        "inverse-surface": "#303030",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#e9c349",
+                        "tertiary-fixed": "#e5e2dd",
+                        "surface": "#fbf9f8",
+                        "surface-bright": "#fbf9f8",
+                        "secondary-container": "#fed65b",
+                        "primary-fixed-dim": "#b0ceb8",
+                        "tertiary-fixed-dim": "#c9c6c2",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#745c00",
+                        "on-surface-variant": "#424843",
+                        "tertiary": "#5f5e5b",
+                        "on-tertiary-fixed-variant": "#474743",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#241a00",
+                        "background": "#fbf9f8",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        "surface-variant": "#e4e2e2",
+                        "tertiary-container": "#a4a29e",
+                        "outline": "#727973",
+                        "surface-container-high": "#eae8e7",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#393936",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#cbead4",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1b1c1c",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-primary-container": "#243e2f",
+                        "on-primary-fixed-variant": "#324c3c",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-primary": "#b0ceb8",
+                        "surface-dim": "#dbd9d9",
+                        "surface-tint": "#496453",
+                        "surface-container": "#efeded",
+                        "outline-variant": "#c2c8c1",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#062013",
+                        "surface-container-low": "#f5f3f3",
+                        "secondary-fixed": "#ffe088",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "secondary": "#735c00",
+                        "primary-container": "#8ca995"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-padding-mobile": "24px",
+                        "section-gap": "120px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "container-padding-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .glass-panel { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+        .gold-accent { border-top: 1px solid theme('colors.secondary-fixed-dim'); }
+        .ambient-shadow { box-shadow: 0 32px 64px -15px rgba(140, 169, 149, 0.08); }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-secondary/20 backdrop-blur-md shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)]">
+<div class="flex justify-between items-center px-container-padding-mobile md:px-container-padding-desktop py-4 max-w-full mx-auto">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold cursor-pointer active:scale-95 transition-all">
+                Le Rêve
+            </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-headline-md text-headline-md font-medium tracking-tight text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Wellness</a>
+<a class="font-headline-md text-headline-md font-medium tracking-tight text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Treatments</a>
+<a class="font-headline-md text-headline-md font-medium tracking-tight text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Studio</a>
+<a class="font-headline-md text-headline-md font-medium tracking-tight text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Journal</a>
+<a class="font-headline-md text-headline-md font-medium tracking-tight text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors hover:scale-[1.02] duration-300" href="#">Preise</a>
+</nav>
+<button class="hidden md:block bg-primary text-on-primary font-body-md text-body-md px-6 py-2 rounded-xl hover:border-secondary-fixed-dim hover:border border border-transparent transition-all hover:scale-[1.02] active:scale-95 duration-300">
+                Termin buchen
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-section-gap">
+<!-- Hero Section -->
+<section class="px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto mb-20 text-center">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6">Vorbereitung auf deinen Termin</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Dein Besuch bei Le Rêve soll vom ersten Moment an eine Auszeit vom Alltag sein. Hier findest du einige liebevolle Hinweise, wie du dich auf deine Behandlungen vorbereiten kannst, um maximale Entspannung zu finden.
+            </p>
+</section>
+<!-- FAQ Grid -->
+<section class="px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card 1: Ankunft -->
+<div class="glass-panel gold-accent rounded-xl p-8 ambient-shadow hover:scale-[0.99] transition-transform duration-300 group">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">schedule</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Deine Ankunft</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Wir bitten dich, etwa 10 Minuten vor deinem gebuchten Termin bei uns einzutreffen. So hast du genügend Zeit, in Ruhe anzukommen, eine Tasse Tee zu genießen und den Alltagsstress vor der Tür zu lassen, bevor deine Behandlung beginnt.
+                    </p>
+</div>
+<!-- Card 2: Kleidung -->
+<div class="glass-panel gold-accent rounded-xl p-8 ambient-shadow hover:scale-[0.99] transition-transform duration-300 group">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">styler</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Kleidung &amp; Komfort</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Komm so, wie du dich am wohlsten fühlst – idealerweise in lockerer, bequemer Kleidung. Für Massagebehandlungen stellen wir dir flauschige Bademäntel und Handtücher zur Verfügung. Schmuck legst du am besten bereits zu Hause ab.
+                    </p>
+</div>
+<!-- Card 3: Gesundheit -->
+<div class="glass-panel gold-accent rounded-xl p-8 ambient-shadow hover:scale-[0.99] transition-transform duration-300 group">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Gesundheitliche Hinweise</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Bitte informiere uns vor der Behandlung über eventuelle gesundheitliche Einschränkungen, Allergien oder eine Schwangerschaft. So können unsere Therapeutinnen die Behandlung optimal auf deine Bedürfnisse anpassen und für deine Sicherheit sorgen.
+                    </p>
+</div>
+<!-- Card 4: Stornierung -->
+<div class="glass-panel gold-accent rounded-xl p-8 ambient-shadow hover:scale-[0.99] transition-transform duration-300 group">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">event_busy</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Stornierungsbedingungen</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Wir verstehen, dass Pläne sich ändern können. Bitte sage Termine mindestens 24 Stunden vorher ab, damit wir die Zeit anderen Gästen anbieten können. Bei späteren Absagen müssen wir leider 50% des Behandlungspreises in Rechnung stellen.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative w-full pt-section-gap pb-12 bg-primary dark:bg-on-primary-fixed flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-2 mb-8 md:mb-0">
+<div class="font-headline-md text-headline-md text-on-primary font-bold mb-4">Le Rêve</div>
+<p class="font-body-md text-body-md text-on-primary/80 max-w-sm">
+                    Dein privates Refugium für tiefgehende Entspannung, spezialisierte Schwangerschafts-Treatments und ganzheitliches Wohlbefinden.
+                </p>
+</div>
+<div class="col-span-1">
+<h3 class="font-label-caps text-label-caps text-on-primary/60 mb-4 uppercase">Navigation</h3>
+<ul class="space-y-3">
+<li><a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 inline-block duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Impressum</a></li>
+<li><a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 inline-block duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Datenschutz</a></li>
+<li><a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 inline-block duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Kontakt</a></li>
+<li><a class="font-body-md text-body-md text-on-primary/60 hover:text-on-primary transition-colors hover:translate-x-1 inline-block duration-200 focus:ring-2 focus:ring-secondary-fixed" href="#">Öffnungszeiten</a></li>
+</ul>
+</div>
+</div>
+<div class="px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto mt-12 pt-8 border-t border-on-primary/10">
+<p class="font-body-md text-body-md text-on-primary/80 text-sm">
+                © 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.
+            </p>
+</div>
+</footer>
+</body></html>

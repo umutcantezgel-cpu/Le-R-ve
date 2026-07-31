@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Le Rêve - Ein Wahrer Traum | Home</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#f2f0f0",
+                      "primary-fixed": "#cbead4",
+                      "surface-dim": "#dbd9d9",
+                      "on-error-container": "#93000a",
+                      "primary-fixed-dim": "#b0ceb8",
+                      "on-tertiary-fixed-variant": "#474743",
+                      "surface-container-lowest": "#ffffff",
+                      "outline-variant": "#c2c8c1",
+                      "on-background": "#1b1c1c",
+                      "secondary-fixed-dim": "#e9c349",
+                      "on-surface": "#1b1c1c",
+                      "on-secondary-container": "#745c00",
+                      "surface": "#fbf9f8",
+                      "on-secondary-fixed": "#241a00",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "surface-container-low": "#f5f3f3",
+                      "on-primary-container": "#243e2f",
+                      "surface-tint": "#496453",
+                      "on-secondary-fixed-variant": "#574500",
+                      "on-tertiary-container": "#393936",
+                      "inverse-primary": "#b0ceb8",
+                      "tertiary-fixed": "#e5e2dd",
+                      "secondary": "#735c00",
+                      "on-secondary": "#ffffff",
+                      "surface-bright": "#fbf9f8",
+                      "primary": "#496453",
+                      "surface-container-high": "#eae8e7",
+                      "tertiary-fixed-dim": "#c9c6c2",
+                      "on-error": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-tertiary": "#ffffff",
+                      "inverse-surface": "#303030",
+                      "surface-container": "#efeded",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#fed65b",
+                      "on-surface-variant": "#424843",
+                      "surface-container-highest": "#e4e2e2",
+                      "on-primary-fixed": "#062013",
+                      "outline": "#727973",
+                      "on-primary-fixed-variant": "#324c3c",
+                      "tertiary": "#5f5e5b",
+                      "background": "#fbf9f8",
+                      "primary-container": "#8ca995",
+                      "secondary-fixed": "#ffe088",
+                      "on-primary": "#ffffff",
+                      "surface-variant": "#e4e2e2",
+                      "tertiary-container": "#a4a29e"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-padding-desktop": "80px",
+                      "section-gap": "120px",
+                      "container-padding-mobile": "24px",
+                      "unit": "8px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-xl": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-top: 1px solid theme('colors.secondary-fixed-dim');
+        }
+        
+        .ambient-shadow {
+            box-shadow: 0 32px 64px -15px rgba(140, 169, 149, 0.08);
+        }
+
+        .gold-frame {
+            position: relative;
+        }
+        .gold-frame::after {
+            content: '';
+            position: absolute;
+            inset: 8px;
+            border: 1px solid theme('colors.secondary-fixed-dim');
+            pointer-events: none;
+            border-radius: theme('borderRadius.xl');
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/60 dark:bg-black/60 backdrop-blur-xl border-b border-secondary/20 shadow-[0_32px_64px_-15px_rgba(140,169,149,0.08)] hidden md:block">
+<div class="flex justify-between items-center px-container-padding-desktop py-4 max-w-full mx-auto">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed-variant dark:text-secondary-fixed italic font-semibold">Le Rêve</div>
+<div class="flex items-center space-x-8 font-headline-md text-headline-md font-medium tracking-tight text-primary dark:text-primary-fixed">
+<a class="text-secondary dark:text-secondary-fixed border-b border-secondary pb-1 cursor-pointer active:scale-95 transition-all" href="#">Wellness</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Treatments</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Studio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Journal</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors cursor-pointer active:scale-95 transition-all" href="#">Preise</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-xl hover:border-secondary-fixed hover:border hover:scale-[1.02] transition-transform duration-300 active:scale-95">Termin buchen</button>
+</div>
+</nav>
+<!-- Mobile Nav (BottomNavBar equivalent logic for responsive pivot) -->
+<nav class="fixed bottom-0 w-full z-50 bg-white/60 backdrop-blur-xl border-t border-secondary/20 shadow-[0_-32px_64px_-15px_rgba(140,169,149,0.08)] md:hidden">
+<div class="flex justify-around items-center px-container-padding-mobile py-4">
+<a class="flex flex-col items-center text-secondary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-label-caps text-label-caps mt-1">Wellness</span>
+</a>
+<a class="flex flex-col items-center text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">health_and_beauty</span>
+<span class="font-label-caps text-label-caps mt-1">Treatments</span>
+</a>
+<a class="flex flex-col items-center text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-caps text-label-caps mt-1">Studio</span>
+</a>
+</div>
+</nav>
+<main class="flex-grow pt-24 md:pt-32 pb-32">
+<!-- Hero Section -->
+<section class="px-container-padding-mobile md:px-container-padding-desktop w-full max-w-[1600px] mx-auto mb-section-gap">
+<div class="relative w-full h-[70vh] md:h-[80vh] rounded-[2rem] overflow-hidden gold-frame ambient-shadow">
+<div class="absolute inset-0 w-full h-full" data-alt="A breathtaking, high-end spa environment bathed in soft, diffused light. The scene features minimalist architecture with smooth, sweeping curves, natural stone textures, and a large, tranquil infinity pool reflecting the serene atmosphere. The color palette is light and airy, dominated by creamy whites, soft sage greens, and subtle gold accents. The mood is one of profound tranquility and ultimate luxury, tailored for a premium women's wellness sanctuary." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxzjsKeLVKphE1RIaXD7zFM-vW39sWZE-5BC3a2gQqGdj0DY4PlcPcLQ7-v18CAZ1KMZnh0lNmaQaz6kGINjr5AU6q4GFpnl3zJDY00BGFqYZe2Uf_8AngaeDERg67MuEjXEOp-7mX-QZTxQMBjtD5eNz9Xor0McXdi0lo4p1mZ5J-6R5yTrYgbYa3VHHcy7PjTSxH8YHMIdOxSxDLEUQ4eqMPY3C4CkVEpNEC0K7JTwSa8q9WOlvZ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-16 text-center items-center">
+<h1 class="font-headline-xl text-headline-xl text-white mb-6 max-w-4xl italic drop-shadow-lg">Le Rêve – Wo Ihre Träume von Entspannung wahr werden</h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-10 max-w-2xl font-light">Exklusive Massagen und Wellness für Frauen in einer Atmosphäre vollkommener Ruhe.</p>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl hover:border-secondary-fixed hover:border hover:scale-[1.02] transition-transform duration-300 font-headline-md text-headline-md flex items-center gap-2">
+                        Jetzt Auszeit buchen
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Vibe Section (Bento Grid Style) -->
+<section class="px-container-padding-mobile md:px-container-padding-desktop w-full max-w-[1400px] mx-auto mb-section-gap">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4 italic">Eine Atmosphäre der Stille</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Tauchen Sie ein in eine Welt, die speziell dafür entworfen wurde, Ihre Sinne zu beruhigen und Ihren Geist zu befreien.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter h-auto md:h-[500px]">
+<div class="col-span-1 md:col-span-2 glass-panel rounded-2xl p-8 flex flex-col justify-end ambient-shadow relative overflow-hidden group">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of elegantly arranged, lit aromatic candles and fresh eucalyptus leaves on a smooth marble surface. Soft, warm lighting creates a deeply relaxing and sensory atmosphere, highlighting the textures of the natural elements and the subtle glow of the flames. The aesthetic is clean, minimalist, and luxurious, fitting a high-end spa setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAP5Zf47ZnialPpGRbxh2PNr77oiT1enDt7TFncc8FNjFYxNw1jEittV-1UR6AloLjr2vXQJTRXzpL2lViiWxcouQUEl4FsMD3lv8mQUPuHCYSJ-EvR6bZ0YaakdVrzFMEegWnxIUg3QDzoErLVBxZKvxrwp6LT2L2R4DzYbFWj5BTmqOV0luA0G4uHu5LeBHi-f-SRE4DPVSMQSDqSzCkbv1v67g25weSV7WpDzq3Koio3w3h3bAI9')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="relative z-10 text-white">
+<span class="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">air</span>
+<h3 class="font-headline-md text-headline-md mb-2">Sanfte Aromen</h3>
+<p class="font-body-md text-body-md text-white/80">Sorgfältig ausgewählte ätherische Öle hüllen den Raum in beruhigende Düfte.</p>
+</div>
+</div>
+<div class="col-span-1 grid grid-rows-2 gap-gutter">
+<div class="glass-panel rounded-2xl p-6 ambient-shadow flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-primary">headphones</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Klänge der Ruhe</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Spezielle Frequenzen und sanfte Melodien, die Körper und Geist harmonisieren.</p>
+</div>
+<div class="glass-panel rounded-2xl p-6 ambient-shadow flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-primary">self_improvement</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Private Oasen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Räume, die absoluten Rückzug und ungestörte Erholung garantieren.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Services -->
+<section class="px-container-padding-mobile md:px-container-padding-desktop w-full max-w-[1400px] mx-auto mb-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2 italic">Unsere Signatur-Behandlungen</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Speziell für die Bedürfnisse des weiblichen Körpers konzipiert.</p>
+</div>
+<button class="mt-4 md:mt-0 font-body-md text-body-md text-secondary hover:text-primary transition-colors flex items-center gap-1">
+                    Alle ansehen
+                    <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="glass-panel rounded-2xl overflow-hidden ambient-shadow group flex flex-col h-full">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-[0.98] transition-transform duration-500 rounded-t-2xl" data-alt="A professional massage therapist gently massaging the shoulders of a relaxed woman in a serene, softly lit spa room. The environment is calm with sage green walls and subtle gold accents. The woman appears completely at peace, embodying the 'Quiet Luxury' and maternal comfort central to the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgJD3_k2_3MbjX8gVIEjHHp0y8bCiAv7GQ2X82klnBqhET0eUmSjWi6Kd3b9rmDmmtCMlmX67x9iIP4pux9bfA5s7Fudh5xTETK-DFO59JAt6nSCBfi9zIsT5Ek-ZyySlYcw1CrKJx6F2K-StPvf7y1-B7CYrzAp8RNGQmn5DAZAve5u5panElx1m1q0X4LTeh9jqULsyW2TbtWIwdLH3ioMx3nCZD7IIJeX4O0Y5StZYXMtM-TOSF"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Ganzkörper-Massage</h3>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-caps text-label-caps">90 Min</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Tiefe Entspannung von Kopf bis Fuß, angepasst an Ihre individuellen Verspannungen.</p>
+<button class="w-full py-3 border border-secondary-fixed text-primary rounded-xl font-headline-md text-headline-md hover:bg-secondary-fixed/10 transition-colors">Details</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel rounded-2xl overflow-hidden ambient-shadow group flex flex-col h-full">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-[0.98] transition-transform duration-500 rounded-t-2xl" data-alt="An assortment of premium essential oil bottles and fresh botanical ingredients like lavender and chamomile, arranged beautifully on a soft cream towel. The lighting is ethereal and soft, highlighting the natural textures and the promise of a sensory aromatherapy journey. The color palette features sage greens, warm ambers, and clean whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkcttg1tN7kPZz7ObrHgd3eW9Ey1vgZ10qBDwmrWxKmBVWdzGs54xtc7SaRWSRBL-XiNmv-R6qPrA-YbeRx-tibWWtB7GMn83mTEcWcZsZUJRsxCaAFFNvECeDNkUQazsTJmN9wROu8Ipjm0q6ors-bCJ9n9Txjzj482I8eJ2xSD3-reFArQTNa6Uw7vtrGUJ3JCW2BYxuKDBJnaUdA5G57nQSr4DL3RSXXfc9U2zmYE1B3Kulzu3v"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Aroma Therapie</h3>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-caps text-label-caps">60 Min</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Eine sinnliche Reise mit warmen Ölen, die emotionale Balance und tiefe innere Ruhe fördert.</p>
+<button class="w-full py-3 border border-secondary-fixed text-primary rounded-xl font-headline-md text-headline-md hover:bg-secondary-fixed/10 transition-colors">Details</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel rounded-2xl overflow-hidden ambient-shadow group flex flex-col h-full">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-[0.98] transition-transform duration-500 rounded-t-2xl" data-alt="A woman receiving a luxurious head spa treatment. Her hair is wet, and the therapist's hands are gently massaging her scalp near a specialized basin. Warm water and soft lighting create a feeling of total surrender and indulgence. The setting is minimal, elegant, and focused on pure relaxation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvjAceB3BnBY2oddIIXYAzh9S_ulyCoKSfnNOGnZKyTth8iHx2EFSSVad9-R04v6rZPBlK1aww38ezec884WSOEiOeJC8Co9OahrxA3k-LpuOCtrYg55pP_qx3LJIV4oAYB44sjGvGNu7wYFAryeoUdx_bzknHmhXCCSQJ_Fp1Gn1NuqjQJOa_Y_-n7xEurfdsf9u82A-w8EL7tY_QyuNlw6CThonHPCjz3d96Jjc23gtlpgxvIDu0"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Head Spa Ritual</h3>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-caps text-label-caps">45 Min</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Befreiung von mentalem Stress durch gezielte Akupressur und warme Öl-Anwendungen am Kopf.</p>
+<button class="w-full py-3 border border-secondary-fixed text-primary rounded-xl font-headline-md text-headline-md hover:bg-secondary-fixed/10 transition-colors">Details</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action / Referral -->
+<section class="px-container-padding-mobile md:px-container-padding-desktop w-full max-w-[1200px] mx-auto">
+<div class="bg-primary-container rounded-[2rem] p-10 md:p-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden gold-frame ambient-shadow">
+<div class="absolute -right-20 -top-20 opacity-10">
+<span class="material-symbols-outlined text-[300px]">loyalty</span>
+</div>
+<div class="relative z-10 max-w-lg mb-8 md:mb-0">
+<h2 class="font-headline-xl text-headline-xl text-on-primary-container mb-4">Wohlbefinden teilen</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container/80 mb-6">Empfehlen Sie Le Rêve Ihren Freundinnen und erhalten Sie bei ihrer ersten Buchung ein exklusives Head Spa Upgrade für Ihren nächsten Besuch.</p>
+<button class="bg-on-primary-container text-white px-6 py-3 rounded-xl hover:scale-[1.02] transition-transform duration-300 font-headline-md text-headline-md">
+                        Freunde werben
+                    </button>
+</div>
+<div class="relative z-10">
+<div class="w-48 h-48 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-secondary-fixed/50">
+<span class="material-symbols-outlined text-6xl text-on-primary-container">favorite</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative w-full pt-section-gap pb-12 bg-primary dark:bg-on-primary-fixed grid grid-cols-1 md:grid-cols-4 gap-gutter px-container-padding-desktop max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-4 mb-8">
+<span class="font-headline-md text-headline-md text-on-primary font-bold">Le Rêve</span>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-6 font-body-md text-body-md text-on-primary/80">
+<a class="text-on-primary/60 hover:text-on-primary transition-colors focus:ring-2 focus:ring-secondary-fixed" href="#">Impressum</a>
+<a class="text-on-primary/60 hover:text-on-primary transition-colors focus:ring-2 focus:ring-secondary-fixed" href="#">Datenschutz</a>
+<a class="text-on-primary/60 hover:text-on-primary transition-colors focus:ring-2 focus:ring-secondary-fixed" href="#">Kontakt</a>
+<a class="text-on-primary/60 hover:text-on-primary transition-colors focus:ring-2 focus:ring-secondary-fixed" href="#">Öffnungszeiten</a>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-on-primary/10">
+<p class="font-body-md text-body-md text-on-primary/80">© 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.</p>
+</div>
+</footer>
+</body></html>
