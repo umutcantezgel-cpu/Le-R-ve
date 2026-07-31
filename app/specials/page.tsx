@@ -1,4 +1,11 @@
 import ImagePlaceholder from '@/components/ImagePlaceholder';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Specials & Pakete | Le Rêve',
+  description: 'Kombinierte Auszeiten und Wellness-Pakete für maximale Erholung bei Le Rêve.',
+  path: '/specials'
+});
 
 export default function Specials() {
   return (

@@ -1,3 +1,11 @@
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'AGB | Le Rêve',
+  description: 'Allgemeine Geschäftsbedingungen von Le Rêve Wellness-Studio.',
+  path: '/agb'
+});
+
 export default function AGB() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16 space-y-12">

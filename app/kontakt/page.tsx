@@ -1,3 +1,11 @@
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Kontakt & Anfahrt | Le Rêve',
+  description: 'Kontaktieren Sie Le Rêve in Berlin für Terminvereinbarungen und Fragen.',
+  path: '/kontakt'
+});
+
 export default function Kontakt() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-16 space-y-16">

@@ -1,5 +1,12 @@
 import Link from 'next/link';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Schwangerschaftsmassage | Le Rêve',
+  description: 'Sanfte Geborgenheit und Linderung für werdende Mütter.',
+  path: '/treatments/schwangerschaftsmassage'
+});
 
 export default function Schwangerschaftsmassage() {
   const services = [

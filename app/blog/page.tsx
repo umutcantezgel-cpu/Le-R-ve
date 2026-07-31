@@ -1,4 +1,11 @@
 import Link from 'next/link';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Journal | Le Rêve',
+  description: 'Inspirationen, Tipps und Artikel für mehr Achtsamkeit und Wohlbefinden.',
+  path: '/blog'
+});
 
 export default function Blog() {
   const posts = [
@@ -29,7 +36,7 @@ export default function Blog() {
             <span className="text-sm text-text-light mb-2 block">{post.date}</span>
             <h2 className="font-serif text-2xl text-secondary mb-4">{post.title}</h2>
             <p className="text-text-main font-light">{post.excerpt}</p>
-            <span className="text-primary text-sm uppercase tracking-widest font-semibold mt-6 block">Weiterlesen →</span>
+            <span className="text-primary text-sm uppercase tracking-widest font-semibold mt-6 block">Artikel lesen: {post.title} →</span>
           </Link>
         ))}
       </div>

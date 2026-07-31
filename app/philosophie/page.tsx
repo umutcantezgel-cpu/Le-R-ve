@@ -1,4 +1,11 @@
 import ImagePlaceholder from '@/components/ImagePlaceholder';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Philosophie | Le Rêve',
+  description: 'Erfahren Sie mehr über die Philosophie und das Ambiente von Le Rêve.',
+  path: '/philosophie'
+});
 
 export default function Philosophie() {
   return (

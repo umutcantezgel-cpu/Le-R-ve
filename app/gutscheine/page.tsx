@@ -1,4 +1,11 @@
 import ImagePlaceholder from '@/components/ImagePlaceholder';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Gutscheine | Le Rêve',
+  description: 'Verschenken Sie wertvolle Momente der Erholung mit einem Wellness-Gutschein von Le Rêve.',
+  path: '/gutscheine'
+});
 
 export default function Gutscheine() {
   return (

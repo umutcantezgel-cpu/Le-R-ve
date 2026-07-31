@@ -1,3 +1,11 @@
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Datenschutz | Le Rêve',
+  description: 'Datenschutzerklärung von Le Rêve Wellness-Studio.',
+  path: '/datenschutz'
+});
+
 export default function Datenschutz() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16 space-y-12">

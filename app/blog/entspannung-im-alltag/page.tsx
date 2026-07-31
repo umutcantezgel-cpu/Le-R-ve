@@ -1,4 +1,11 @@
 import Link from 'next/link';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Entspannung im Alltag finden | Le Rêve Journal',
+  description: 'Kleine Rituale und Tipps, die Ihnen helfen, auch an stressigen Tagen Ruhe zu bewahren.',
+  path: '/blog/entspannung-im-alltag'
+});
 
 export default function BlogPost1() {
   return (

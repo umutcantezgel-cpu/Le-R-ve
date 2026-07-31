@@ -1,3 +1,11 @@
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Impressum | Le Rêve',
+  description: 'Impressum von Le Rêve Wellness-Studio.',
+  path: '/impressum'
+});
+
 export default function Impressum() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16 space-y-12">

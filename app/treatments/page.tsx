@@ -1,4 +1,11 @@
 import Link from 'next/link';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Behandlungen | Le Rêve',
+  description: 'Wählen Sie Ihre persönliche Auszeit aus unserem exklusiven Angebot.',
+  path: '/treatments'
+});
 
 export default function Treatments() {
   const treatments = [
@@ -89,7 +96,7 @@ export default function Treatments() {
               <div className="pt-6 border-t border-outline-variant/30 flex justify-between items-center mt-auto">
                 <span className="text-secondary font-headline-md text-xl">{t.price}</span>
                 <span className="text-primary font-label-caps tracking-widest uppercase flex items-center gap-2 group-hover:text-secondary-fixed-dim transition-colors">
-                  Details
+                  Details zu {t.title}
                   <span className="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
                 </span>
               </div>

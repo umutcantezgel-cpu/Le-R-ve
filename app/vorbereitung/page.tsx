@@ -1,4 +1,11 @@
 import Link from 'next/link';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Vorbereitung | Le Rêve',
+  description: 'Wichtige Informationen und Tipps zur Vorbereitung auf Ihren Wellness-Termin bei Le Rêve.',
+  path: '/vorbereitung'
+});
 
 export default function Vorbereitung() {
   return (
@@ -15,7 +22,7 @@ export default function Vorbereitung() {
             <span className="material-symbols-outlined">schedule</span>
           </div>
           <div>
-            <h3 className="font-serif text-2xl text-primary mb-2">Pünktlichkeit & Ankommen</h3>
+            <h2 className="font-serif text-2xl text-primary mb-2">Pünktlichkeit & Ankommen</h2>
             <p className="text-text-main font-light leading-relaxed">
               Bitte planen Sie ein, etwa 10 Minuten vor Ihrem Termin bei uns einzutreffen. So haben Sie ausreichend Zeit, bei einem Begrüßungstee anzukommen und den Alltag hinter sich zu lassen. Bei Verspätungen müssen wir die Behandlungszeit leider entsprechend verkürzen, um nachfolgende Termine einhalten zu können.
             </p>
@@ -27,7 +34,7 @@ export default function Vorbereitung() {
             <span className="material-symbols-outlined">restaurant</span>
           </div>
           <div>
-            <h3 className="font-serif text-2xl text-primary mb-2">Essen & Trinken</h3>
+            <h2 className="font-serif text-2xl text-primary mb-2">Essen & Trinken</h2>
             <p className="text-text-main font-light leading-relaxed">
               Vermeiden Sie schwere Mahlzeiten direkt vor Ihrer Massage. Eine leichte Stärkung 1-2 Stunden vorher ist ideal. Bitte trinken Sie ausreichend Wasser, sowohl vor als auch nach der Behandlung, um den Entschlackungsprozess zu unterstützen.
             </p>
@@ -39,7 +46,7 @@ export default function Vorbereitung() {
             <span className="material-symbols-outlined">health_and_safety</span>
           </div>
           <div>
-            <h3 className="font-serif text-2xl text-primary mb-2">Gesundheitliche Besonderheiten</h3>
+            <h2 className="font-serif text-2xl text-primary mb-2">Gesundheitliche Besonderheiten</h2>
             <p className="text-text-main font-light leading-relaxed">
               Bitte informieren Sie uns vorab über eventuelle Allergien, körperliche Beschwerden, kürzliche Operationen oder eine bestehende Schwangerschaft. So können wir die Behandlung optimal und sicher auf Ihre Bedürfnisse abstimmen.
             </p>

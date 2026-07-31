@@ -1,5 +1,12 @@
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import Link from 'next/link';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Braut-Massage | Le Rêve',
+  description: 'Exklusiv für Ihren großen Tag: Braut-Massage & Specials.',
+  path: '/treatments/braut-massage'
+});
 
 export default function BrautMassage() {
   return (
@@ -14,7 +21,7 @@ export default function BrautMassage() {
           </p>
           <div className="pt-4">
             <Link href="/booking" className="inline-block bg-primary text-white px-8 py-3 rounded-xl font-medium hover:scale-[1.02] transition-transform">
-              Beratung anfragen
+              Braut-Massage anfragen
             </Link>
           </div>
         </div>
@@ -37,7 +44,7 @@ export default function BrautMassage() {
           </div>
           <div className="md:col-span-4 flex justify-start md:justify-end">
             <Link href="/booking" className="border border-secondary text-secondary px-6 py-2 rounded-lg hover:bg-secondary/10 transition-colors">
-              Jetzt buchen
+              Braut-Massage buchen
             </Link>
           </div>
         </div>

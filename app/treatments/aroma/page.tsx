@@ -1,5 +1,12 @@
 import Link from 'next/link';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Aroma-Therapie | Le Rêve',
+  description: 'Eine sinnliche Reise mit Fokus auf wohltuende Düfte.',
+  path: '/treatments/aroma'
+});
 
 export default function Aroma() {
   const services = [

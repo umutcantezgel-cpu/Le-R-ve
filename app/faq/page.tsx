@@ -1,3 +1,11 @@
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'FAQ | Le Rêve',
+  description: 'Häufig gestellte Fragen zu Ihrem Besuch bei Le Rêve.',
+  path: '/faq'
+});
+
 export default function FAQ() {
   const faqs = [
     {
@@ -28,7 +36,7 @@ export default function FAQ() {
       <div className="space-y-6">
         {faqs.map((faq, idx) => (
           <div key={idx} className="glass-panel p-8 rounded-2xl shadow-sm">
-            <h3 className="font-serif text-2xl text-secondary mb-4">{faq.q}</h3>
+            <h2 className="font-serif text-2xl text-secondary mb-4">{faq.q}</h2>
             <p className="text-text-main font-light leading-relaxed">{faq.a}</p>
           </div>
         ))}

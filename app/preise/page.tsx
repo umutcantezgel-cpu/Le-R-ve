@@ -1,4 +1,11 @@
 import Link from 'next/link';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Preise | Le Rêve',
+  description: 'Entdecken Sie die Preise für Massagen und Wellness-Anwendungen bei Le Rêve.',
+  path: '/preise'
+});
 
 export default function Preise() {
   const categories = [

@@ -1,5 +1,12 @@
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import Link from 'next/link';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Hausbesuche | Le Rêve',
+  description: 'Exklusive Wellness-Behandlungen und Massagen bei Ihnen zu Hause von Le Rêve.',
+  path: '/hausbesuche'
+});
 
 export default function Hausbesuche() {
   return (

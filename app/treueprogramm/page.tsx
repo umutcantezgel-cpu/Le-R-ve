@@ -1,5 +1,12 @@
 import TenCard from '@/components/TenCard';
 import Link from 'next/link';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Treueprogramm | Le Rêve',
+  description: 'Werden Sie Mitglied im Le Rêve Circle und profitieren Sie von unserem Treueprogramm.',
+  path: '/treueprogramm'
+});
 
 export default function Treueprogramm() {
   return (

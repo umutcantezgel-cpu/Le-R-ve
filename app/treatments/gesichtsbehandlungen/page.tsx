@@ -1,4 +1,11 @@
 import Link from 'next/link';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Gesichtsbehandlungen | Le Rêve',
+  description: 'Strahlende Haut und tiefenwirksame Pflege.',
+  path: '/treatments/gesichtsbehandlungen'
+});
 
 export default function Gesichtsbehandlungen() {
   const services = [
@@ -31,7 +38,7 @@ export default function Gesichtsbehandlungen() {
               className="flex flex-col md:flex-row justify-between items-start md:items-center py-6 border-b border-primary/10 last:border-0 hover:bg-white/40 transition-colors rounded-2xl px-4 -mx-4"
             >
               <div>
-                <h3 className="font-serif text-2xl md:text-3xl text-primary">{s.name}</h3>
+                <h2 className="font-serif text-2xl md:text-3xl text-primary">{s.name}</h2>
               </div>
               <div className="flex items-center gap-8 mt-4 md:mt-0 w-full md:w-auto justify-between md:justify-end">
                 <span className="text-text-light text-lg bg-surface px-4 py-1 rounded-full">{s.time}</span>

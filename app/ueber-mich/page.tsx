@@ -1,4 +1,11 @@
 import ImagePlaceholder from '@/components/ImagePlaceholder';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Über Mich | Le Rêve',
+  description: 'Lernen Sie die Gründerin und Therapeutin von Le Rêve kennen.',
+  path: '/ueber-mich'
+});
 
 export default function UeberMich() {
   return (

@@ -1,4 +1,11 @@
 import Link from 'next/link';
+import { constructMetadata } from '@/lib/seo';
+
+export const metadata = constructMetadata({
+  title: 'Vorteile der Schwangerschaftsmassage | Le Rêve Journal',
+  description: 'Erfahren Sie, wie sanfte Berührungen und Massagen während der Schwangerschaft Wunder wirken können.',
+  path: '/blog/vorteile-schwangerschaftsmassage'
+});
 
 export default function BlogPost2() {
   return (
