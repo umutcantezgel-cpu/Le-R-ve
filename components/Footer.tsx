@@ -30,8 +30,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto mt-12 pt-8 border-t border-on-primary/10">
-        <p className="font-body-md text-body-md text-on-primary/80 text-center md:text-left text-sm">
-          © 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.
+        <p className="font-body-md text-body-md text-on-primary/80 text-center md:text-left text-sm flex flex-col md:flex-row md:items-center gap-2">
+          <span>© 2024 Le Rêve - Ein Wahrer Traum. Alle Rechte vorbehalten.</span>
+          <span className="hidden md:inline">|</span>
+          <a href="https://codayweb.de" className="hover:text-on-primary transition-colors duration-200">Webdesign by Coday</a>
         </p>
       </div>
     </footer>

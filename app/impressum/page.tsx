@@ -41,6 +41,15 @@ export default function Impressum() {
             DE 123 456 789
           </p>
         </section>
+
+        <section className="space-y-2">
+          <h2 className="font-serif text-2xl text-secondary">Technische Konzeption & Umsetzung</h2>
+          <p>
+            <a href="https://codayweb.de" className="text-primary hover:text-secondary underline transition-colors duration-200">
+              Coday Webdesign Wetzlar
+            </a>
+          </p>
+        </section>
       </div>
     </div>
   );
